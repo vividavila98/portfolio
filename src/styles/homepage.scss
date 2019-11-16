@@ -1,0 +1,31 @@
+body {
+    border: 50px solid white;
+    border-top: none;
+    @media (max-width: 767.98px) {
+        border: none;
+    }
+}
+
+.header {
+    height: 85vh;
+    background-color: #F8F8F8;
+    position: relative;
+    display: flex;
+}
+
+.web-background {
+    background-image: url('../images/web_background.png');
+    background-size: cover;
+}
+
+.title {
+    position: absolute;
+    font-size: 100px;
+    z-index: 1;
+    line-height: 80px;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 767.98px) {
+        font-size: 80px;
+    }
+}
