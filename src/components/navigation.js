@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import '../styles/navigation.scss';
 import { 
     Collapse, Navbar, NavbarToggler, NavbarBrand, 
-    Nav, NavItem
+    Nav, NavItem, Button
 } from 'reactstrap';
 import { NavHashLink } from 'react-router-hash-link';
 
@@ -35,7 +35,7 @@ class Navigation extends Component {
                           <NavHashLink to='/#projects'>Projects</NavHashLink>
                       </NavItem>
                       <NavItem>
-                          <NavHashLink to='/#contact'>Contact</NavHashLink>
+                          <NavHashLink to='/#contact'><Button className='contact-btn'>Contact</Button></NavHashLink>
                       </NavItem>
                   </Nav>
               </Collapse>

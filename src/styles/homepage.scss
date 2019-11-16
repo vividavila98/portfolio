@@ -1,6 +1,7 @@
 body {
     border: 50px solid white;
     border-top: none;
+    font-family: 'Quicksand', sans-serif;
     @media (max-width: 767.98px) {
         border: none;
     }
@@ -18,14 +19,37 @@ body {
     background-size: cover;
 }
 
+.title-box {
+    position: absolute;
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+}
+
 .title {
     position: absolute;
-    font-size: 100px;
+    font-size: 125px;
+    font-family: 'Secular One', sans-serif;
     z-index: 1;
-    line-height: 80px;
-    justify-content: center;
-    align-items: center;
+    line-height: 120px;
+    margin-top: 10%;
     @media (max-width: 767.98px) {
-        font-size: 80px;
+        font-size: 100px;
     }
+}
+
+.title-caption {
+    position: absolute;
+    z-index: 1;
+    margin-top: 30%;
+}
+
+.intro-box {
+    display: flex;
+    align-items: flex-end;
+}
+
+.intro {
+    margin-bottom: 10%;
+    font-size: 25px;
 }

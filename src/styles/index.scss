@@ -1,9 +1,15 @@
 @import './homepage';
 @import './navigation.scss';
 
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Secular+One&display=swap');
+
 html, body {
     font-family: 'Quicksand-Regular', sans-serif;
     scroll-behavior: smooth;
     font-size: 20px;
+}
+
+p, a, h3 {
+    font-family: 'Quicksand', sans-serif;
 }
 
