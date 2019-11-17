@@ -90,7 +90,7 @@ class Homepage extends Component {
             </Row>
             </div>
           </section>
-          {/* Projects */}
+          {/* Projects Intro */}
           <div className='container-fluid'>
             <div className='container'>
               <Row>
@@ -102,6 +102,44 @@ class Homepage extends Component {
                 </Col>
               </Row>
             </div>
+          </div>
+          {/* First Project Row */}
+          <div className='container-fluid mt-2'>
+            <Row>
+              <Col className='medpius'>
+                <div className='container'>
+                  <p>Web Platform</p>
+                  <h5 className='name'>Medpius.</h5>
+                  <h5 className='info'>Connecting Japenese patients to American Doctors</h5>
+                </div>
+              </Col>
+              <Col className='cssa'>
+              <div className='container'>
+                  <p>Club Website</p>
+                  <h5 className='name'>Cognitive Science Student Association.</h5>
+                  <h5 className='info'>Representing one of the biggest departments at UC San Diego</h5>
+                </div>
+              </Col>
+            </Row>
+          </div>
+           {/* Second Project Row */}
+           <div className='container-fluid'>
+            <Row>
+              <Col className='jamming'>
+                <div className='container'>
+                  <p>Web Application</p>
+                  <h5 className='name'>Jamming.</h5>
+                  <h5 className='info'>Searching for music using the Spotify API</h5>
+                </div>
+              </Col>
+              <Col className='ravenous'>
+              <div className='container'>
+                  <p>Web Application</p>
+                  <h5 className='name'>Ravenous.</h5>
+                  <h5 className='info'>Searching for restaurants using the Yelp API</h5>
+                </div>
+              </Col>
+            </Row>
           </div>
 	   </div>
     );

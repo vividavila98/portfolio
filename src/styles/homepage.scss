@@ -89,10 +89,7 @@ h1, h2 {
     padding-bottom: 2%;
 }
 
-.about-col {
-    display: flex;
-    align-items: center;
-}
+
 
 .about-text {
     font-size: 115px;
@@ -187,4 +184,121 @@ li {
 .black-period {
     font-family: 'Secular One', sans-serif;
     font-size: 60px;
+}
+
+/***** Medpius ****/
+
+.medpius {
+    height: 350px;
+    padding-bottom: 30px;
+    background-color: #F5D33E;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    p {
+        color: #F8F8F8;
+        opacity: 80%;
+    }
+    .name {
+        color: white;
+        font-family: 'Secular One', sans-serif;
+        margin-bottom: 0;
+    }
+    .info {
+        color: #1E7FC6;
+        font-family: 'Secular One', sans-serif;
+        width: 400px;
+    }
+    @media (max-width: 767.98px) {
+        .info {
+            width: 300px;
+        }
+    }
+}
+
+/***** CSSA ****/
+.cssa {
+    height: 350px;
+    padding-bottom: 30px;
+    background-color: #263477;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    p {
+        color: #F8F8F8;
+        opacity: 80%;
+    }
+    .name {
+        color: white;
+        font-family: 'Secular One', sans-serif;
+        margin-bottom: 0;
+    }
+    .info {
+        color: #F5D33E;
+        font-family: 'Secular One', sans-serif;
+        width: 400px;
+    }
+    @media (max-width: 767.98px) {
+        .info {
+            width: 300px;
+        }
+    }
+}
+
+/***** Jamming ****/
+.jamming {
+    height: 350px;
+    padding-bottom: 30px;
+    background-color: #D34141;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    p {
+        color: #F8F8F8;
+        opacity: 80%;
+    }
+    .name {
+        color: white;
+        font-family: 'Secular One', sans-serif;
+        margin-bottom: 0;
+    }
+    .info {
+        color: #C8D0F8;
+        font-family: 'Secular One', sans-serif;
+        width: 400px;
+    }
+    @media (max-width: 767.98px) {
+        .info {
+            width: 300px;
+        }
+    }
+}
+
+/***** Ravenous ****/
+.ravenous {
+    height: 350px;
+    padding-bottom: 30px;
+    background-color: #1E7FC6;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    p {
+        color: #F8F8F8;
+        opacity: 80%;
+    }
+    .name {
+        color: white;
+        font-family: 'Secular One', sans-serif;
+        margin-bottom: 0;
+    }
+    .info {
+        color: #FBA8A3;
+        font-family: 'Secular One', sans-serif;
+        width: 400px;
+    }
+    @media (max-width: 767.98px) {
+        .info {
+            width: 300px;
+        }
+    }
 }
