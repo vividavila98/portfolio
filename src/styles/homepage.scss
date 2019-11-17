@@ -1,4 +1,5 @@
 $pink: #FF5851;
+$thick: 'Secular One', sans-serif;
 
 /****** Header *****/
 p {
@@ -131,6 +132,7 @@ h1, h2 {
 
 .skills-container {
     padding-bottom: 5%;
+    padding-right: 0%;
 }
 
 .skills-period {
@@ -189,7 +191,7 @@ li {
 /***** Medpius ****/
 
 .medpius {
-    height: 350px;
+    height: 360px;
     padding-bottom: 30px;
     background-color: #F5D33E;
     flex-direction: column;
@@ -218,7 +220,7 @@ li {
 
 /***** CSSA ****/
 .cssa {
-    height: 350px;
+    height: 360px;
     padding-bottom: 30px;
     background-color: #263477;
     flex-direction: column;
@@ -246,8 +248,11 @@ li {
 }
 
 /***** Jamming ****/
+.project-container {
+    padding-bottom: 5%;
+}
 .jamming {
-    height: 350px;
+    height: 360px;
     padding-bottom: 30px;
     background-color: #D34141;
     flex-direction: column;
@@ -264,7 +269,7 @@ li {
     }
     .info {
         color: #C8D0F8;
-        font-family: 'Secular One', sans-serif;
+        font-family: $thick;
         width: 400px;
     }
     @media (max-width: 767.98px) {
@@ -276,7 +281,7 @@ li {
 
 /***** Ravenous ****/
 .ravenous {
-    height: 350px;
+    height: 360px;
     padding-bottom: 30px;
     background-color: #1E7FC6;
     flex-direction: column;
@@ -288,17 +293,37 @@ li {
     }
     .name {
         color: white;
-        font-family: 'Secular One', sans-serif;
+        font-family: $thick;
         margin-bottom: 0;
     }
     .info {
         color: #FBA8A3;
-        font-family: 'Secular One', sans-serif;
+        font-family: $thick;
         width: 400px;
     }
     @media (max-width: 767.98px) {
         .info {
             width: 300px;
         }
+    }
+}
+
+/**** Footer ****/
+footer {
+    padding-bottom: 5%;
+    h5 {
+        font-family: $thick;
+    }
+    .box {
+        border-right: 1px lightgray solid;
+        @media (max-width: 575.98px) {
+            border-right: none;
+        }
+    }
+    .code {
+        border-right: none;
+    }
+    .pink {
+        color: $pink;
     }
 }

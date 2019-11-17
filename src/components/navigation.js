@@ -22,7 +22,7 @@ class Navigation extends Component {
       <div className='navigation'>
           <Navbar expand='md'>
               <NavbarBrand href='/'>Viviana</NavbarBrand>
-              <NavbarToggler onClick={this.toggler} />
+              <NavbarToggler onClick={this.toggler}>&#61;</NavbarToggler>
               <Collapse isOpen={this.state.isOpen} navbar>
                   <Nav className='ml-auto' navbar>
                       <NavItem>

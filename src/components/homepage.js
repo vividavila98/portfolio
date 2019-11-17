@@ -94,10 +94,10 @@ class Homepage extends Component {
           <div className='container-fluid'>
             <div className='container'>
               <Row>
-                <Col>
+                <Col sm='12' md='6'>
                   <h2 className='work-text'><img src={sqiuggle} className='squiggle' alt='squiggle'/><br/>My Work<span className='about-period'>.</span></h2>
                 </Col>
-                <Col className='selection'>
+                <Col  sm='12' md='6' className='selection'>
                   <h3 className='selection-text'><span className='bold'>A selection of </span>four projects <span className='bold'>I'm most proud of</span><span className='black-period'>.</span></h3>
                 </Col>
               </Row>
@@ -123,7 +123,7 @@ class Homepage extends Component {
             </Row>
           </div>
            {/* Second Project Row */}
-           <div className='container-fluid'>
+           <div className='container-fluid project-container'>
             <Row>
               <Col className='jamming'>
                 <div className='container'>
@@ -141,6 +141,30 @@ class Homepage extends Component {
               </Col>
             </Row>
           </div>
+          {/* Footer */ }
+          <footer className='container-fluid '>
+            <h5 className='text-center pink'>Thanks for reading! Here's more about me...</h5>
+            <div className='container mt-4'>
+              <Row>
+                <Col sm='6' md='3' className='box'>
+                  <h5 className='mb-0'>Email <span className='pink'>&#8594;</span></h5>
+                  <p >get in touch with me</p>
+                </Col>
+                <Col sm='6' md='3' className='box'>
+                  <h5 className='mb-0'>Resume <span className='pink'>&#8594;</span></h5>
+                  <p >learn about my work experience</p>
+                </Col>
+                <Col sm='6' md='3' className='box'>
+                  <h5 className='mb-0'>Github <span className='pink'>&#8594;</span></h5>
+                  <p>analyze my code</p>
+                </Col>
+                <Col sm='6' md='3'>
+                  <h5 className='mb-0'>Codecademy <span className='pink'>&#8594;</span></h5>
+                  <p >see my progress</p>
+                </Col>
+              </Row>
+            </div>
+          </footer>
 	   </div>
     );
   }
