@@ -56,22 +56,32 @@ class Homepage extends Component {
               </Col>
               <Col sm='12' md='6' className='skills-list'>
                 <Row>
-                  <Col>
+                  <Col sm='12' md='4'>
                     <ul>
                       <li><img src={sqiuggle} alt='squiggle'/></li>
-                      <li>Languages</li>
+                      <li className='bold'>Languages</li>
+                      <li>HTML5</li>
+                      <li>CSS3</li>
+                      <li>JavaScript</li>
                     </ul>
                   </Col>
-                  <Col>
+                  <Col sm='12' md='4'>
                     <ul>
                       <li><img src={sqiuggle} alt='squiggle'/></li>
-                      <li>Libraries &amp; Frameworks</li>
+                      <li className='bold'>Libraries &amp; Frameworks</li>
+                      <li>ReactJS</li>
+                      <li>Bootstrap</li>
+                      <li>Reactstrap</li>
+                      <li>jQuery</li>
                     </ul>
                   </Col>
-                  <Col>
+                  <Col sm='12' md='4'>
                     <ul>
                       <li><img src={sqiuggle} alt='squiggle'/></li>
-                      <li>Tools</li>
+                      <li className='bold'>Tools</li>
+                      <li>npm</li>
+                      <li>Git</li>
+                      <li>Github/Bitbucket</li>
                     </ul>
                   </Col>
                 </Row>
