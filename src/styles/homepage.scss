@@ -76,18 +76,27 @@ h1, h2 {
     font-size: 25px;
     max-width: 400px;
     @media (max-width: 767.98px) {
-        font-size: 17px;
+        font-size: 20px;
+    }
+    @media (max-width: 575.98px) {
+        font-size: 17px;;
     }
 }
 
 /***** About Me *****/
 .about-container {
-    margin-top: 8%;
-    padding-bottom: 8%;
+    margin-top: 5%;
+    padding-bottom: 2%;
+}
+
+.about-col {
+    display: flex;
+    align-items: center;
 }
 
 .about-text {
     font-size: 115px;
+    line-height: 90px;
     @media (max-width: 767.98px) {
         font-size: 80px;
     }
@@ -98,8 +107,8 @@ h1, h2 {
 }
 
 .venn {
-    height: 370px;
-    width: 370px;
+    height: 340px;
+    width: 340px;
     @media (max-width: 767.98px) {
         height: 200px;
         width: 200px;
@@ -114,9 +123,7 @@ h1, h2 {
 .skills-text {
     width: 400px;
     line-height: 30px;
-    margin-left: 12%;
     @media (max-width: 767.98px) {
-        margin-left: 0;
         width: 300px;
     }
 }
@@ -126,7 +133,7 @@ h1, h2 {
 }
 
 .skills-container {
-    padding-bottom: 8%;
+    padding-bottom: 5%;
 }
 
 .skills-period {
@@ -138,11 +145,10 @@ h1, h2 {
 .skills-list {
     background-color: black;
     width: 100%;
-    padding: 6%;
+    padding: 5%;
 }
 
 .skills-intro {
-    margin-left: 12%;
     width: 425px;
     @media (max-width: 767.98px) {
         width: 300px;
@@ -153,4 +159,32 @@ h1, h2 {
 li {
     list-style-type:none;
     color: white;
+}
+
+/*** Work ****/
+.work-text {
+    font-size: 115px;
+    width: 100px;
+    line-height: 90px;
+    @media (max-width: 767.98px) {
+        font-size: 80px;
+    }
+}
+
+.selection {
+    display: flex;
+    align-items: flex-end;
+}
+
+.selection-text {
+    width: 350px;
+    line-height: 30px;
+    @media (max-width: 767.98px) {
+        width: 300px;
+    }
+}
+
+.black-period {
+    font-family: 'Secular One', sans-serif;
+    font-size: 60px;
 }

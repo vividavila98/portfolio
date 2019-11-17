@@ -35,8 +35,7 @@ class Homepage extends Component {
             <div className='container'>
               <Row>
                 <Col sm='12' md='6' className='about-col'>
-                  <img src={sqiuggle} className='squiggle' alt='squiggle'/>
-                  <h2 className='about-text'>About <br/>Me<span className='about-period'>.</span></h2>
+                  <h2 className='about-text'><img src={sqiuggle} className='squiggle' alt='squiggle'/><br/>About <br/>Me<span className='about-period'>.</span></h2>
                 </Col>
                 <Col sm='12' md='6' className='text-center'>
                   <img src={venn} className='venn img-fluid' alt='venn'/>
@@ -49,12 +48,13 @@ class Homepage extends Component {
           </section>
           {/* Skills */}
           <section className='container-fluid skills-container'>
+            <div className='container'>
             <Row>
-              <Col sm='12' md='6'>
+              <Col md='12' lg='6'>
               <h3 className='skills-text'><span className='bold'>An overview of my </span>technical skills<span className='skills-period'>.</span></h3>
                 <p className='skills-intro mt-4'> I am currently shifting towards becoming more of a JavaScript developer, rather than a UI/UX one, by learning ReactJS. I then plan on shifting towards becoming a Fullstack Developer in the future. </p>
               </Col>
-              <Col sm='12' md='6' className='skills-list'>
+              <Col md='12' lg='6' className='skills-list'>
                 <Row>
                   <Col sm='12' md='4'>
                     <ul>
@@ -81,13 +81,28 @@ class Homepage extends Component {
                       <li className='bold'>Tools</li>
                       <li>npm</li>
                       <li>Git</li>
-                      <li>Github/Bitbucket</li>
+                      <li>Github</li>
+                      <li>Bitbucket</li>
                     </ul>
                   </Col>
                 </Row>
               </Col>
             </Row>
+            </div>
           </section>
+          {/* Projects */}
+          <div className='container-fluid'>
+            <div className='container'>
+              <Row>
+                <Col>
+                  <h2 className='work-text'><img src={sqiuggle} className='squiggle' alt='squiggle'/><br/>My Work<span className='about-period'>.</span></h2>
+                </Col>
+                <Col className='selection'>
+                  <h3 className='selection-text'><span className='bold'>A selection of </span>four projects <span className='bold'>I'm most proud of</span><span className='black-period'>.</span></h3>
+                </Col>
+              </Row>
+            </div>
+          </div>
 	   </div>
     );
   }
