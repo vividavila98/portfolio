@@ -48,9 +48,35 @@ class Homepage extends Component {
             </div>
           </section>
           {/* Skills */}
-          <section className='container'>
-            <Col><h3>An</h3></Col>
-            <Col></Col>
+          <section className='container-fluid skills-container'>
+            <Row>
+              <Col sm='12' md='6'>
+              <h3 className='skills-text'><span className='bold'>An overview of my </span>technical skills<span className='skills-period'>.</span></h3>
+                <p className='skills-intro mt-4'> I am currently shifting towards becoming more of a JavaScript developer, rather than a UI/UX one, by learning ReactJS. I then plan on shifting towards becoming a Fullstack Developer in the future. </p>
+              </Col>
+              <Col sm='12' md='6' className='skills-list'>
+                <Row>
+                  <Col>
+                    <ul>
+                      <li><img src={sqiuggle} alt='squiggle'/></li>
+                      <li>Languages</li>
+                    </ul>
+                  </Col>
+                  <Col>
+                    <ul>
+                      <li><img src={sqiuggle} alt='squiggle'/></li>
+                      <li>Libraries &amp; Frameworks</li>
+                    </ul>
+                  </Col>
+                  <Col>
+                    <ul>
+                      <li><img src={sqiuggle} alt='squiggle'/></li>
+                      <li>Tools</li>
+                    </ul>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
           </section>
 	   </div>
     );

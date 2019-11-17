@@ -82,25 +82,24 @@ h1, h2 {
 
 /***** About Me *****/
 .about-container {
-    margin-top: 10%;
-    padding-bottom: 10%;
+    margin-top: 8%;
+    padding-bottom: 8%;
 }
 
 .about-text {
-    font-size: 120px;
+    font-size: 115px;
     @media (max-width: 767.98px) {
         font-size: 80px;
     }
 }
-
 
 .about-period {
     color: $pink;
 }
 
 .venn {
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     @media (max-width: 767.98px) {
         height: 200px;
         width: 200px;
@@ -109,4 +108,48 @@ h1, h2 {
 
 .squiggle {
     margin-left: 25px;
+}
+
+/***** Skills ******/
+.skills-text {
+    width: 400px;
+    line-height: 30px;
+    margin-left: 12%;
+    @media (max-width: 767.98px) {
+        margin-left: 0;
+        width: 300px;
+    }
+}
+
+.bold {
+    font-family: 'Secular One', sans-serif;
+}
+
+.skills-container {
+    padding-bottom: 8%;
+}
+
+.skills-period {
+    color: $pink;
+    font-family: 'Secular One', sans-serif;
+    font-size: 60px;
+}
+
+.skills-list {
+    background-color: black;
+    width: 100%;
+}
+
+.skills-intro {
+    margin-left: 12%;
+    width: 425px;
+    @media (max-width: 767.98px) {
+        width: 300px;
+        margin-left: 0;
+    }
+}
+
+li {
+    list-style-type:none;
+    color: white;
 }
