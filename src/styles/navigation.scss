@@ -1,11 +1,21 @@
+$pink: #FF5851;
+$thick: 'Secular One', sans-serif;
+
 a.navbar-brand, a.active {
     color: black;
+    &:hover {
+        color: $pink;
+    }
 }
 
 a.active {
     margin-right: 50px;
     margin-top: 15px;
     padding-top: 35px;
+    &:hover {
+        text-decoration: none;
+        color: $pink;
+    }
 }
 
 button.contact-btn {
@@ -13,6 +23,16 @@ button.contact-btn {
     padding: 5px 25px;
     display: inline-block;
     border-radius: 16px;
+    &:hover {
+        background-color: $pink;
+        border: none;
+    }
+    a {
+        color: white;
+        &:hover {
+            text-decoration: none;
+        }
+    }
     @media (max-width: 767.98px) {
         background-color: white;
         color: black;

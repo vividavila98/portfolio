@@ -21,8 +21,8 @@ class Navigation extends Component {
     return (
       <div className='navigation'>
           <Navbar expand='md'>
-              <NavbarBrand href='/'>Viviana</NavbarBrand>
-              <NavbarToggler onClick={this.toggler}>&#61;</NavbarToggler>
+              <NavbarBrand href='/'><strong>Viviana</strong></NavbarBrand>
+              <NavbarToggler onClick={this.toggler}><span className='menu'>&#61;</span></NavbarToggler>
               <Collapse isOpen={this.state.isOpen} navbar>
                   <Nav className='ml-auto' navbar>
                       <NavItem>
@@ -35,7 +35,7 @@ class Navigation extends Component {
                           <NavHashLink to='/#projects'>Projects</NavHashLink>
                       </NavItem>
                       <NavItem>
-                          <NavHashLink to='/#contact'><Button className='contact-btn'>Contact</Button></NavHashLink>
+                          <Button className='contact-btn'><a href='mailto:vdavila@ucsd.edu'>Contact</a></Button>
                       </NavItem>
                   </Nav>
               </Collapse>

@@ -4,6 +4,7 @@ import { Row, Col } from 'reactstrap';
 import sqiuggle from '../images/squiggle.png'
 import venn from '../images/venn.png'
 import '../styles/homepage.scss';
+import resume from '../images/Viviana_Davila_Resume.pdf'
 
 class Homepage extends Component {
 
@@ -17,7 +18,7 @@ class Homepage extends Component {
       <div className='homepage'>
           <Navigation />
           {/* header */}
-          <header className='container-fluid'>
+          <header id='top' className='container-fluid'>
             <Row>
               <Col className='header web-background'></Col>
               <div className='container-fluid title-box'>
@@ -31,7 +32,7 @@ class Homepage extends Component {
             </Row>
           </header>
           {/* About Me */}
-          <section className='container-fluid about-container'>
+          <section id='about' className='container-fluid about-container'>
             <div className='container'>
               <Row>
                 <Col sm='12' md='6' className='about-col'>
@@ -91,7 +92,7 @@ class Homepage extends Component {
             </div>
           </section>
           {/* Projects Intro */}
-          <div className='container-fluid'>
+          <div id='projects' className='container-fluid'>
             <div className='container'>
               <Row>
                 <Col sm='12' md='6'>
@@ -107,18 +108,22 @@ class Homepage extends Component {
           <div className='container-fluid mt-2'>
             <Row>
               <Col className='medpius'>
+              <a href='https://www.medpius.com' target='_blank'>
                 <div className='container'>
                   <p>Web Platform</p>
-                  <h5 className='name'>Medpius.</h5>
+                  <h5 className='name'>Medpius<span className='period'>.</span></h5>
                   <h5 className='info'>Connecting Japenese patients to American Doctors</h5>
                 </div>
+                </a>
               </Col>
               <Col className='cssa'>
+              <a href='https://cssa-ucsd.org/index.html' target='_blank'>
               <div className='container'>
                   <p>Club Website</p>
-                  <h5 className='name'>Cognitive Science Student Association.</h5>
+                  <h5 className='name'>Cognitive Science Student Association<span className='period'>.</span></h5>
                   <h5 className='info'>Representing one of the biggest departments at UC San Diego</h5>
                 </div>
+                </a>
               </Col>
             </Row>
           </div>
@@ -128,14 +133,14 @@ class Homepage extends Component {
               <Col className='jamming'>
                 <div className='container'>
                   <p>Web Application</p>
-                  <h5 className='name'>Jamming.</h5>
+                  <h5 className='name'>Jamming<span className='period'>.</span></h5>
                   <h5 className='info'>Searching for music using the Spotify API</h5>
                 </div>
               </Col>
               <Col className='ravenous'>
               <div className='container'>
                   <p>Web Application</p>
-                  <h5 className='name'>Ravenous.</h5>
+                  <h5 className='name'>Ravenous<span className='period'>.</span></h5>
                   <h5 className='info'>Searching for restaurants using the Yelp API</h5>
                 </div>
               </Col>
@@ -143,23 +148,23 @@ class Homepage extends Component {
           </div>
           {/* Footer */ }
           <footer className='container-fluid '>
-            <h5 className='text-center pink'>Thanks for reading! Here's more about me...</h5>
+            <h5 className='text-center pink'>Thanks for reading! Here's more about me <span className='period'>...</span></h5>
             <div className='container mt-4'>
               <Row>
                 <Col sm='6' md='3' className='box'>
-                  <h5 className='mb-0'>Email <span className='pink'>&#8594;</span></h5>
+                  <h5 className='mb-0'><a href='mailto:vdavila@ucsd.edu'>Email <span className='pink'>&#8594;</span></a></h5>
                   <p >get in touch with me</p>
                 </Col>
                 <Col sm='6' md='3' className='box'>
-                  <h5 className='mb-0'>Resume <span className='pink'>&#8594;</span></h5>
+                  <h5 className='mb-0'><a href={resume} target='_blank'>Resume <span className='pink'>&#8594;</span></a></h5>
                   <p >learn about my work experience</p>
                 </Col>
                 <Col sm='6' md='3' className='box'>
-                  <h5 className='mb-0'>Github <span className='pink'>&#8594;</span></h5>
+                  <h5 className='mb-0'><a href='https://github.com/vividavila98' target='_blank'>Github <span className='pink'>&#8594;</span></a></h5>
                   <p>analyze my code</p>
                 </Col>
                 <Col sm='6' md='3'>
-                  <h5 className='mb-0'>Codecademy <span className='pink'>&#8594;</span></h5>
+                  <h5 className='mb-0'><a href='https://www.codecademy.com/profiles/vdavila98' target='_blank'>Codecademy <span className='pink'>&#8594;</span></a></h5>
                   <p >see my progress</p>
                 </Col>
               </Row>

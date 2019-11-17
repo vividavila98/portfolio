@@ -189,6 +189,9 @@ li {
 }
 
 /***** Medpius ****/
+.period {
+    font-size: 35px;
+}
 
 .medpius {
     height: 360px;
@@ -314,14 +317,19 @@ footer {
     h5 {
         font-family: $thick;
     }
+    a {
+        font-family: $thick;
+        color: black;
+        &:hover {
+            color: $pink;
+            text-decoration: none;
+        }
+    }
     .box {
         border-right: 1px lightgray solid;
         @media (max-width: 575.98px) {
             border-right: none;
         }
-    }
-    .code {
-        border-right: none;
     }
     .pink {
         color: $pink;
