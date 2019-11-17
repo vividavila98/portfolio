@@ -1,5 +1,6 @@
 body {
     border: 50px solid white;
+    background-color: #F8F8F8;
     border-top: none;
     font-family: 'Quicksand', sans-serif;
     @media (max-width: 767.98px) {
@@ -7,11 +8,15 @@ body {
     }
 }
 
+
 .header {
     height: 85vh;
     background-color: #F8F8F8;
     position: relative;
     display: flex;
+    @media (max-width: 575.98px) {
+        height: 90vh;
+    }
 }
 
 .web-background {
@@ -28,20 +33,20 @@ body {
 
 .title {
     position: absolute;
-    font-size: 125px;
+    font-size: 120px;
     font-family: 'Secular One', sans-serif;
     z-index: 1;
     line-height: 120px;
-    margin-top: 10%;
-    @media (max-width: 767.98px) {
-        font-size: 100px;
+    margin-top: 4%;
+    @media (max-width: 575.98px) {
+        font-size: 90px;
     }
 }
 
 .title-caption {
     position: absolute;
     z-index: 1;
-    margin-top: 30%;
+    margin-left: 5%;
 }
 
 .intro-box {
@@ -50,6 +55,9 @@ body {
 }
 
 .intro {
-    margin-bottom: 10%;
-    font-size: 25px;
+    font-size: 22px;
+    max-width: 400px;
+    @media (max-width: 575.98px) {
+        font-size: 17px;
+    }
 }

@@ -20,11 +20,12 @@ class Homepage extends Component {
             <Row>
               <Col className='header web-background'></Col>
               <div className='container-fluid title-box'>
-                <h1 className='title text-center'>Viviana <br/>Davila</h1>
-                {/*<h3 className='title-caption text-center'>Front-End Web Developer</h3>*/}
+                <h1 className='title text-center'>
+                  Viviana <br/>Davila<br/>
+                  <span><h3 className='title-caption text-center'>Front-End Web Developer</h3></span><br/></h1>
               </div>
               <Col className='header intro-box'>
-                <p className='intro'>Hello! My name is Viviana Davila, and I’m <br/>a fourth-year undergraduate at UC <br/>San Diego studying Cognitive Science - <br/>Design and Interaction. <br/> <img src={sqiuggle} alt='squiggle'/></p>
+                <p className='intro'>Hello! My name is Viviana Davila, and I’m a fourth-year undergraduate at UC San Diego studying Cognitive Science - Design and Interaction. <br/> <img src={sqiuggle} alt='squiggle'/></p>
               </Col>
             </Row>
           </header>
