@@ -32,6 +32,13 @@ button.contact-btn {
         &:hover {
             text-decoration: none;
         }
+        @media (max-width: 767.98px) {
+            background-color: white;
+            color: black;
+            padding: 0;
+            border: none;
+            border-radius: 0;
+        }
     }
     @media (max-width: 767.98px) {
         background-color: white;
