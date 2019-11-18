@@ -5,6 +5,7 @@ import sqiuggle from '../images/squiggle.png'
 import venn from '../images/venn.png'
 import '../styles/homepage.scss';
 import resume from '../images/Viviana_Davila_Resume.pdf'
+import { NavHashLink } from 'react-router-hash-link';
 
 class Homepage extends Component {
 
@@ -170,6 +171,7 @@ class Homepage extends Component {
               </Row>
             </div>
           </footer>
+          <NavHashLink to='/#navigation'><p className='top mb-0 back'>&nbsp;Back to the top <span className='pink'>&#8593;</span></p></NavHashLink>
 	   </div>
     );
   }

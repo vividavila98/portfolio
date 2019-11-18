@@ -77,10 +77,10 @@ h1, h2 {
     font-size: 25px;
     max-width: 400px;
     @media (max-width: 767.98px) {
-        font-size: 20px;
+        font-size: 17px;
     }
     @media (max-width: 575.98px) {
-        font-size: 17px;;
+        font-size: 15px;
     }
 }
 
@@ -105,8 +105,8 @@ h1, h2 {
 }
 
 .venn {
-    height: 340px;
-    width: 340px;
+    height: 400px;
+    width: 400px;
     @media (max-width: 767.98px) {
         height: 200px;
         width: 200px;
@@ -313,7 +313,7 @@ li {
 
 /**** Footer ****/
 footer {
-    padding-bottom: 5%;
+    padding-bottom: 2%;
     h5 {
         font-family: $thick;
     }
@@ -331,7 +331,13 @@ footer {
             border-right: none;
         }
     }
-    .pink {
-        color: $pink;
-    }
+    
+}
+
+.pink {
+    color: $pink;
+}
+
+.back {
+    font-size: 14px;
 }

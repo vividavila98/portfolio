@@ -19,7 +19,7 @@ class Navigation extends Component {
 
   render() {
     return (
-      <div className='navigation'>
+      <div className='navigation' id='navigation'>
           <Navbar expand='md'>
               <NavbarBrand href='/'><strong>Viviana</strong></NavbarBrand>
               <NavbarToggler onClick={this.toggler}><span className='menu'>&#61;</span></NavbarToggler>
