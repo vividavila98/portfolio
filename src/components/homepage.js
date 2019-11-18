@@ -35,10 +35,10 @@ class Homepage extends Component {
           <section id='about' className='container-fluid about-container'>
             <div className='container'>
               <Row>
-                <Col sm='12' md='6' className='about-col'>
+                <Col md='12' lg='6' className='about-col'>
                   <h2 className='about-text'><img src={sqiuggle} className='squiggle' alt='squiggle'/><br/>About <br/>Me<span className='about-period'>.</span></h2>
                 </Col>
-                <Col sm='12' md='6' className='text-center'>
+                <Col md='12' lg='6' className='text-center'>
                   <img src={venn} className='venn img-fluid' alt='venn'/>
                   <p className='text-left'>
                   I believe that having an education is a privilege that I should use to help the community around me. Because of this, I aspire to use my skills in Front-End Web Development and UX/UI Design to take part in meaningful projects that are aimed towards making social impact.
@@ -95,10 +95,10 @@ class Homepage extends Component {
           <div id='projects' className='container-fluid'>
             <div className='container'>
               <Row>
-                <Col sm='12' md='6'>
+                <Col md='12' lg='6'>
                   <h2 className='work-text'><img src={sqiuggle} className='squiggle' alt='squiggle'/><br/>My Work<span className='about-period'>.</span></h2>
                 </Col>
-                <Col  sm='12' md='6' className='selection'>
+                <Col  md='12' lg='6' className='selection'>
                   <h3 className='selection-text'><span className='bold'>A selection of </span>four projects <span className='bold'>I'm most proud of</span><span className='black-period'>.</span></h3>
                 </Col>
               </Row>
