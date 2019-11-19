@@ -38,12 +38,13 @@ class Homepage extends Component {
               <Row>
                 <Col md='12' lg='6' className='about-col'>
                   <h2 className='about-text'><img src={sqiuggle} className='squiggle' alt='squiggle'/><br/>About <br/>Me<span className='about-period'>.</span></h2>
-                </Col>
-                <Col md='12' lg='6' className='text-center'>
-                  <img src={venn} className='venn img-fluid' alt='venn'/>
                   <p className='text-left'>
                   I believe that having an education is a privilege that I should use to help the community around me. Because of this, I aspire to use my skills in Front-End Web Development and UX/UI Design to take part in meaningful projects that are aimed towards making social impact.
                   </p>
+                </Col>
+                <Col md='12' lg='6' className='text-center'>
+                  <img src={venn} className='venn img-fluid' alt='venn'/>
+                  
                 </Col>
               </Row>
             </div>
