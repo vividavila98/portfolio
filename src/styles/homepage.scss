@@ -10,8 +10,8 @@ p {
 
 
 body {
+    overflow-x: hidden;
     border: 50px solid white;
-    background-color: #F8F8F8;
     border-top: none;
     font-family: 'Quicksand', sans-serif;
     @media (max-width: 767.98px) {

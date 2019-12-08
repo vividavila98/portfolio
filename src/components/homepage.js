@@ -7,12 +7,18 @@ import '../styles/homepage.scss';
 import resume from '../images/Viviana_Davila_Resume.pdf'
 import { NavHashLink } from 'react-router-hash-link';
 
-class Homepage extends Component {
+const medpius = {
+  num: '2',
+  langs: 'ReactJS ReactStrap SCSS',
+  title: 'Medpius.',
+  date: 'June 19 - August 19',
+  role: <ul><li>Front-End Web Developer Intern</li></ul>,
+  overview: 'As the Web Developer for the Executive Board, I redesigned and developed the website for UC San Diego’s Cognitive Science Student Association. The previous website was not mobile responsive, and the co-presidents wanted a “cleaner” look. I focused on the design being minimal and professional, while also keeping the content friendly. I then used Bootstrap and CSS media queries to make the site mobile responsive. Since the overall redesign, my role now consists of genral maintenance.',
+  visit:'https://cssa-ucsd.org/index.html',
+  pdf:'../images/cssa.pdf'
+};
 
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+class Homepage extends Component {
 
   render() {
     return (
@@ -110,7 +116,7 @@ class Homepage extends Component {
           <div className='container-fluid mt-2'>
             <Row>
               <Col className='medpius'>
-              <a href='https://www.medpius.com' target='_blank'>
+              <a href='/project'>
                 <div className='container'>
                   <p>Web Platform</p>
                   <h5 className='name'>Medpius<span className='period'>.</span></h5>
@@ -119,7 +125,7 @@ class Homepage extends Component {
                 </a>
               </Col>
               <Col className='cssa'>
-              <a href='https://cssa-ucsd.org/index.html' target='_blank'>
+              <a href='/project'>
               <div className='container'>
                   <p>Club Website</p>
                   <h5 className='name'>Cognitive Science Student Association<span className='period'>.</span></h5>
