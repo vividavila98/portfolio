@@ -10,9 +10,10 @@ const cssa = {
   langs: 'HTML5 CSS3 Bootstrap',
   title: 'Cognitive Science Student Association.',
   date: 'May 19 - Present',
-  role: 'UI Designer | Front-End Web Developer | Executive Board member',
+  role: 'UI Designer | Front-End Web Developer | Executive Board Member',
   overview: 'As the Web Developer for the Executive Board, I redesigned and developed the website for UC San Diego’s Cognitive Science Student Association. The previous website was not mobile responsive, and the co-presidents wanted a “cleaner” look. I focused on the design being minimal and professional, while also keeping the content friendly. I then used Bootstrap and CSS media queries to make the site mobile responsive. Since the overall redesign, my role now consists of genral maintenance.',
   visit:'https://cssa-ucsd.org/index.html',
+  pdf: '',
   class: 'cssa-class',
   button: 'Visit Site',
   link: 'https://cssa-ucsd.org/index.html'
@@ -31,17 +32,30 @@ const medpius = {
   button: 'Visit Site'
 };
 
+
+
 class Project extends Component {
 
+choosePdf = () => {
+  switch(this.props.project) {
+    case cssa:
+      return cssaPdf;
+    case medpius:
+      return '';
+    default:
+      return '';
+  }
+}
   
   render() {
-      console.log(this.props.project.pdf);
+      console.log(this.props.project);
+      console.log(this.choosePdf());
     return (
       <div className={this.props.project.class}>
          <div className='container-fluid'>
              <Row className='main-row'>
                  <Col className='slide' md='8'>
-                   {this.choosePdf}
+                   {this.choosePdf()}
                  </Col>
                  <Col className='info' md='4'>
                    <span className='lang'>
