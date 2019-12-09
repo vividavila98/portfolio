@@ -3,17 +3,20 @@ import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import HomePage from './components/homepage';
 import Project from './components/project';
 import './styles/index.scss';
+import {cssaPdf} from './images/cssa.pdf';
 
 const cssa = {
   num: '1',
   langs: 'HTML5 CSS3 Bootstrap',
   title: 'Cognitive Science Student Association.',
   date: 'May 19 - Present',
-  role: <ul><li>UI Developer</li></ul>,
-  overview: 'As the Web Developer for the Executive Board, I redesigned and developed the website for UC San Diego’s Cognitive Science Student Association. The previous website was not mobile responsive, and the co-presidents wanted a “cleaner” look. I focused on the design being minimal and professional, while also keeping the content friendly. I then used Bootstrap and CSS media queries to make the site mobile responsive. Since the overall redesign, my role now consists of genral maintenance.',
+  role: 'UI Designer | Front-End Web Developer | Executive Board member',
+  overview: 'As the Web Developer for the Executive Board, I redesigned and developed the website for UC San Diego’s Cognitive Science Student Association. The previous website was not mobile responsive, and the co-presidents wanted a “cleaner” look. I focused on the design being minimal and professional, while also keeping the content friendly. I then used Bootstrap and CSS media queries to make the site mobile responsive. Since completing the overall redesign, my role now consists of genral maintenance.',
   visit:'https://cssa-ucsd.org/index.html',
-  pdf:'../images/cssa.pdf',
-  class: 'cssa-class'
+  pdf: cssaPdf,
+  class: 'cssa-class',
+  button: 'Visit Site',
+  link: 'https://cssa-ucsd.org/index.html'
 };
 
 class App extends Component {

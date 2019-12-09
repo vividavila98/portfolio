@@ -13,11 +13,12 @@ const medpius = {
   langs: 'ReactJS ReactStrap SCSS',
   title: 'Medpius.',
   date: 'June 19 - August 19',
-  role: <ul><li>Front-End Web Developer Intern</li></ul>,
-  overview: 'As the Web Developer for the Executive Board, I redesigned and developed the website for UC San Diego’s Cognitive Science Student Association. The previous website was not mobile responsive, and the co-presidents wanted a “cleaner” look. I focused on the design being minimal and professional, while also keeping the content friendly. I then used Bootstrap and CSS media queries to make the site mobile responsive. Since the overall redesign, my role now consists of genral maintenance.',
+  role: '',
+  overview: '',
   visit:'https://cssa-ucsd.org/index.html',
-  pdf:'../images/cssa.pdf',
-  class: 'medpius-class'
+  pdf: '',
+  class: 'medpius-class',
+  button: 'Visit Site'
 };
 
 const cssa = {
@@ -25,12 +26,14 @@ const cssa = {
   langs: 'HTML5 CSS3 Bootstrap',
   title: 'Cognitive Science Student Association.',
   date: 'May 19 - Present',
-  role: <ul><li>UI Developer</li></ul>,
+  role: 'UI Designer | Front-End Web Developer | Executive Board member',
   overview: 'As the Web Developer for the Executive Board, I redesigned and developed the website for UC San Diego’s Cognitive Science Student Association. The previous website was not mobile responsive, and the co-presidents wanted a “cleaner” look. I focused on the design being minimal and professional, while also keeping the content friendly. I then used Bootstrap and CSS media queries to make the site mobile responsive. Since the overall redesign, my role now consists of genral maintenance.',
   visit:'https://cssa-ucsd.org/index.html',
-  pdf:'../images/cssa.pdf',
-  class: 'cssa-class'
+  class: 'cssa-class',
+  button: 'Visit Site',
+  link: 'https://cssa-ucsd.org/index.html'
 };
+
 
 class Homepage extends Component {
 
@@ -142,8 +145,8 @@ class Homepage extends Component {
                 </div>
                 </Link>
               </Col>
-              <Col className='cssa'>
-              <Link to='/project' onClick={() => this.handleChange(cssa)}>
+              <Col className='cssa' onClick={() => this.handleChange(cssa)}>
+              <Link to='/project'>
               <div className='container'>
                   <p>Club Website</p>
                   <h5 className='name'>Cognitive Science Student Association<span className='period'>.</span></h5>
