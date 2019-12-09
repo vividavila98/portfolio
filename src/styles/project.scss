@@ -1,1 +1,40 @@
 $thick: 'Secular One', sans-serif;
+
+html, body {
+    border: none;
+}
+
+.cssa-class {
+    font-size: 15px;
+    .main-row {
+        height: 100vh;
+    }
+    .info {
+        padding-top: 15px;
+        background-color: #263477;
+        span {
+            color: rgba(255, 255, 255, .53);
+        }
+        h1 {
+            padding-top: 15%;
+            margin-bottom: 0;
+            color: #F5D33E;
+            font-size: 20px;
+        }
+        .date {
+            color: rgba(255, 255, 255, .53);
+            font-style: italic;
+            font-size: 12px;
+        }
+    }
+}
+
+.medpius-class {
+    .main-row {
+        height: 100vh;
+    }
+    .info {
+        padding-top: 15px;
+        background-color: #F5D33E;
+    }
+}

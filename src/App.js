@@ -12,7 +12,8 @@ const cssa = {
   role: <ul><li>UI Developer</li></ul>,
   overview: 'As the Web Developer for the Executive Board, I redesigned and developed the website for UC San Diego’s Cognitive Science Student Association. The previous website was not mobile responsive, and the co-presidents wanted a “cleaner” look. I focused on the design being minimal and professional, while also keeping the content friendly. I then used Bootstrap and CSS media queries to make the site mobile responsive. Since the overall redesign, my role now consists of genral maintenance.',
   visit:'https://cssa-ucsd.org/index.html',
-  pdf:'../images/cssa.pdf'
+  pdf:'../images/cssa.pdf',
+  class: 'cssa-class'
 };
 
 class App extends Component {
@@ -27,7 +28,6 @@ class App extends Component {
   changeProject = (projectName) => {
     this.setState({project: projectName});
   }
-
 
 render() {
     return (

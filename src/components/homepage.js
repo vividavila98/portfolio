@@ -6,6 +6,7 @@ import venn from '../images/venn.png'
 import '../styles/homepage.scss';
 import resume from '../images/Viviana_Davila_Resume.pdf'
 import { NavHashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 const medpius = {
   num: '2',
@@ -15,10 +16,27 @@ const medpius = {
   role: <ul><li>Front-End Web Developer Intern</li></ul>,
   overview: 'As the Web Developer for the Executive Board, I redesigned and developed the website for UC San Diego’s Cognitive Science Student Association. The previous website was not mobile responsive, and the co-presidents wanted a “cleaner” look. I focused on the design being minimal and professional, while also keeping the content friendly. I then used Bootstrap and CSS media queries to make the site mobile responsive. Since the overall redesign, my role now consists of genral maintenance.',
   visit:'https://cssa-ucsd.org/index.html',
-  pdf:'../images/cssa.pdf'
+  pdf:'../images/cssa.pdf',
+  class: 'medpius-class'
+};
+
+const cssa = {
+  num: '1',
+  langs: 'HTML5 CSS3 Bootstrap',
+  title: 'Cognitive Science Student Association.',
+  date: 'May 19 - Present',
+  role: <ul><li>UI Developer</li></ul>,
+  overview: 'As the Web Developer for the Executive Board, I redesigned and developed the website for UC San Diego’s Cognitive Science Student Association. The previous website was not mobile responsive, and the co-presidents wanted a “cleaner” look. I focused on the design being minimal and professional, while also keeping the content friendly. I then used Bootstrap and CSS media queries to make the site mobile responsive. Since the overall redesign, my role now consists of genral maintenance.',
+  visit:'https://cssa-ucsd.org/index.html',
+  pdf:'../images/cssa.pdf',
+  class: 'cssa-class'
 };
 
 class Homepage extends Component {
+
+ handleChange = (change) => {
+    this.props.changeProject(change);
+  }
 
   render() {
     return (
@@ -116,22 +134,22 @@ class Homepage extends Component {
           <div className='container-fluid mt-2'>
             <Row>
               <Col className='medpius'>
-              <a href='/project'>
+              <Link to='/project' onClick={() => this.handleChange(medpius)}>
                 <div className='container'>
                   <p>Web Platform</p>
                   <h5 className='name'>Medpius<span className='period'>.</span></h5>
                   <h5 className='info'>Connecting Japenese patients to American Doctors</h5>
                 </div>
-                </a>
+                </Link>
               </Col>
               <Col className='cssa'>
-              <a href='/project'>
+              <Link to='/project' onClick={() => this.handleChange(cssa)}>
               <div className='container'>
                   <p>Club Website</p>
                   <h5 className='name'>Cognitive Science Student Association<span className='period'>.</span></h5>
                   <h5 className='info'>Representing one of the biggest departments at UC San Diego</h5>
                 </div>
-                </a>
+                </Link>
               </Col>
             </Row>
           </div>
