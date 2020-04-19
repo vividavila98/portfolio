@@ -1,208 +1,114 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Navigation from './navigation';
 import { Row, Col } from 'reactstrap';
-import sqiuggle from '../images/squiggle.png'
-import venn from '../images/venn.png'
+import skills from '../images/skills.svg';
 import '../styles/homepage.scss';
 import resume from '../images/Viviana_Davila_Resume.pdf'
 import { NavHashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
+import line from '../images/line.svg';
 
-const medpius = {
-  num: '2',
-  langs: 'ReactJS ReactStrap SCSS',
-  title: 'Medpius.',
-  date: 'June 19 - August 19',
-  role: '',
-  overview: '',
-  visit:'https://cssa-ucsd.org/index.html',
-  pdf: '',
-  class: 'medpius-class',
-  button: 'Visit Site'
-};
-
-const cssa = {
-  num: '1',
-  langs: 'HTML5 CSS3 Bootstrap',
-  title: 'Cognitive Science Student Association.',
-  date: 'May 19 - Present',
-  role: 'UI Designer | Front-End Web Developer | Executive Board member',
-  overview: 'As the Web Developer for the Executive Board, I redesigned and developed the website for UC San Diego’s Cognitive Science Student Association. The previous website was not mobile responsive, and the co-presidents wanted a “cleaner” look. I focused on the design being minimal and professional, while also keeping the content friendly. I then used Bootstrap and CSS media queries to make the site mobile responsive. Since the overall redesign, my role now consists of genral maintenance.',
-  visit:'https://cssa-ucsd.org/index.html',
-  class: 'cssa-class',
-  button: 'Visit Site',
-  link: 'https://cssa-ucsd.org/index.html'
-};
-
-
-class Homepage extends Component {
-
- handleChange = (change) => {
-    this.props.changeProject(change);
-  }
-
-  render() {
-    return (
-      <div className='homepage'>
-          <Navigation />
-          {/* header */}
-          <header id='top' className='container-fluid'>
+export default function Homepage() {
+  return (
+    <div className='homepage'>
+      <Navigation />
+        {/* header */}
+        <header id='top' className='container-fluid'>
+          <Row>
+            <Col className='header web-background'></Col>
+            <div className='container-fluid title-box'>
+              <h1 className='title text-center'>
+                Viviana <br/>Davila<br/>
+                <span><h3 className='title-caption text-center code'>Front-End Web Developer</h3></span><br/></h1>
+            </div>
+            <Col className='header intro-box'>
+              <p className='intro'>Hello! I’m a Front-End Web Developer based in San Diego, CA with an emphasis on utilizing ReactJS to build both simple mobile-responsive websites &amp; powerful, dynamic web applications. <br/> </p>
+            </Col>
+          </Row>
+        </header>
+        {/* About Me */}
+        <section id='about' className='container-fluid'>
+          <div className='container about'>
             <Row>
-              <Col className='header web-background'></Col>
-              <div className='container-fluid title-box'>
-                <h1 className='title text-center'>
-                  Viviana <br/>Davila<br/>
-                  <span><h3 className='title-caption text-center'>Front-End Web Developer</h3></span><br/></h1>
-              </div>
-              <Col className='header intro-box'>
-                <p className='intro'>Hello! My name is Viviana Davila, and I’m a fourth-year undergraduate at UC San Diego studying Cognitive Science - Design and Interaction. <br/> <img src={sqiuggle} alt='squiggle'/></p>
+            <Col md='12' lg='6'>
+                <h3><span className='code'>01. </span>About Me <img src={line} className='line' /></h3>
+                <h5 className='code'>// More about me as a Web Developer</h5>
+                <img src={skills} className='skills img-fluid' alt='skills'/>
+              </Col>
+              <Col md='12' lg='6' className='about-col'>
+                <p className='about-text'>
+                With my education of UI/UX Design from UC San Diego, I branched off to learn 
+                Front-End Web Development on my own. I began with developing my skills as a UI/UX 
+                Developer by learning <span className='code'>HTML</span>, <span className='code'>CSS</span>, &amp;  
+                <span className='code'> Boostrap</span> to build mobile-responsive websites. 
+                I then began developing my skills as a JavaScript Developer by learning <span className='code'>ReactJS</span>. Now, 
+                I’m building powerful and dynamic web applications, while learning new technologies on the way. 
+                I love that I will never stop being a student!
+                </p>
               </Col>
             </Row>
-          </header>
-          {/* About Me */}
-          <section id='about' className='container-fluid about-container'>
-            <div className='container'>
-              <Row>
-                <Col md='12' lg='6' className='about-col'>
-                  <h2 className='about-text'><img src={sqiuggle} className='squiggle' alt='squiggle'/><br/>About <br/>Me<span className='about-period'>.</span></h2>
-                  <p className='text-left'>
-                  I believe that having an education is a privilege that I should use to help the community around me. Because of this, I aspire to use my skills in Front-End Web Development and UX/UI Design to take part in meaningful projects that are aimed towards making social impact.
+          </div>
+        </section>
+        {/* Projects Intro */}
+        <section id='projects' className='container-fluid text-center'>
+          <div className='container projects'>
+            <h3><span className='code'>03. </span>My Projects <img src={line} className='line' /></h3>
+            <h5 className='code'>// UI/UX Development &amp; JavaScript Development</h5>
+            <Row>
+              <Col md='12' lg='6' class='first-box'>
+              <div className='outline'></div>
+                <div className='box'>
+                  <h6 className='code'>Club Website</h6>
+                  <h5>Cognitive Science Student Assoc.</h5>
+                  <p className='info'>
+                    A resource on how 
+                    students can get involved in the Cognitive 
+                    Science community. 
                   </p>
-                </Col>
-                <Col md='12' lg='6' className='text-center'>
-                  <img src={venn} className='venn img-fluid' alt='venn'/>
-                  
-                </Col>
-              </Row>
-            </div>
-          </section>
-          {/* Skills */}
-          <section className='container-fluid skills-container'>
-            <div className='container'>
-            <Row>
+                  <p className='tech'>HTML CSS3 Bootstrap</p>
+                </div>
+              </Col>
               <Col md='12' lg='6'>
-              <h3 className='skills-text'><span className='bold'>An overview of my </span>technical skills<span className='skills-period'>.</span></h3>
-                <p className='skills-intro mt-4'> I am currently shifting towards becoming more of a JavaScript developer, rather than a UI/UX one, by learning ReactJS. I then plan on shifting towards becoming a Fullstack Developer in the future. </p>
-              </Col>
-              <Col md='12' lg='6' className='skills-list'>
-                <Row>
-                  <Col sm='12' md='4'>
-                    <ul>
-                      <li><img src={sqiuggle} alt='squiggle'/></li>
-                      <li className='bold'>Languages</li>
-                      <li>HTML5</li>
-                      <li>CSS3</li>
-                      <li>JavaScript</li>
-                    </ul>
-                  </Col>
-                  <Col sm='12' md='4'>
-                    <ul>
-                      <li><img src={sqiuggle} alt='squiggle'/></li>
-                      <li className='bold'>Libraries &amp; Frameworks</li>
-                      <li>ReactJS</li>
-                      <li>Bootstrap</li>
-                      <li>Reactstrap</li>
-                      <li>jQuery</li>
-                    </ul>
-                  </Col>
-                  <Col sm='12' md='4'>
-                    <ul>
-                      <li><img src={sqiuggle} alt='squiggle'/></li>
-                      <li className='bold'>Tools</li>
-                      <li>npm</li>
-                      <li>Git</li>
-                      <li>Github</li>
-                      <li>Bitbucket</li>
-                    </ul>
-                  </Col>
-                </Row>
+              <div className='outline'></div>
+                <div className='box'>
+                  <h6 className='code'>Web Application</h6>
+                  <h5>Ravenous</h5>
+                  <p className='info'>
+                    A tool to search for businesses matching your inputted criteria.
+                  </p>
+                  <p className='tech'>JavaScript ReactJS Axios</p>
+                </div>
               </Col>
             </Row>
-            </div>
-          </section>
-          {/* Projects Intro */}
-          <div id='projects' className='container-fluid'>
-            <div className='container'>
-              <Row>
-                <Col md='12' lg='6'>
-                  <h2 className='work-text'><img src={sqiuggle} className='squiggle' alt='squiggle'/><br/>My Work<span className='about-period'>.</span></h2>
-                </Col>
-                <Col  md='12' lg='6' className='selection'>
-                  <h3 className='selection-text'><span className='bold'>A selection of </span>four projects <span className='bold'>I'm most proud of</span><span className='black-period'>.</span></h3>
-                </Col>
-              </Row>
-            </div>
           </div>
-          {/* First Project Row */}
-          <div className='container-fluid mt-2'>
+        </section>
+        {/* Footer */ }
+        <footer id='contact' className='container-fluid text-center'>
+          <div className='container contact'>
+            <h3><span className='code'>04. </span>Contact Me <img src={line} className='line' /></h3>
+            <h5 className='code'>// If you're interested in disucssing my work, email me!</h5>
             <Row>
-              <Col className='medpius'>
-              <Link to='/project' onClick={() => this.handleChange(medpius)}>
-                <div className='container'>
-                  <p>Web Platform</p>
-                  <h5 className='name'>Medpius<span className='period'>.</span></h5>
-                  <h5 className='info'>Connecting Japenese patients to American Doctors</h5>
-                </div>
-                </Link>
+              <Col sm='6' md='3' className='box'>
+                <h5 className='mb-0'><a href='mailto:vdavila@ucsd.edu'>Email <span className='pink'>&#8594;</span></a></h5>
+                <p >get in touch with me</p>
               </Col>
-              <Col className='cssa' onClick={() => this.handleChange(cssa)}>
-              <Link to='/project'>
-              <div className='container'>
-                  <p>Club Website</p>
-                  <h5 className='name'>Cognitive Science Student Association<span className='period'>.</span></h5>
-                  <h5 className='info'>Representing one of the biggest departments at UC San Diego</h5>
-                </div>
-                </Link>
+              <Col sm='6' md='3' className='box'>
+                <h5 className='mb-0'><a href={resume} target='_blank'>Resume <span className='pink'>&#8594;</span></a></h5>
+                <p >learn about my work experience</p>
+              </Col>
+              <Col sm='6' md='3' className='box'>
+                <h5 className='mb-0'><a href='https://github.com/vividavila98' target='_blank'>Github <span className='pink'>&#8594;</span></a></h5>
+                <p>analyze my code</p>
+              </Col>
+              <Col sm='6' md='3'>
+                <h5 className='mb-0'><a href='https://www.codecademy.com/profiles/vdavila98' target='_blank'>Codecademy <span className='pink'>&#8594;</span></a></h5>
+                <p >see my progress</p>
               </Col>
             </Row>
           </div>
-           {/* Second Project Row */}
-           <div className='container-fluid project-container'>
-            <Row>
-              <Col className='jamming'>
-                <div className='container'>
-                  <p>Web Application</p>
-                  <h5 className='name'>Jamming<span className='period'>.</span></h5>
-                  <h5 className='info'>Searching for music using the Spotify API</h5>
-                </div>
-              </Col>
-              <Col className='ravenous'>
-              <div className='container'>
-                  <p>Web Application</p>
-                  <h5 className='name'>Ravenous<span className='period'>.</span></h5>
-                  <h5 className='info'>Searching for restaurants using the Yelp API</h5>
-                </div>
-              </Col>
-            </Row>
-          </div>
-          {/* Footer */ }
-          <footer className='container-fluid '>
-            <h5 className='text-center pink'>Thanks for reading! Here's more about me <span className='period'>...</span></h5>
-            <div className='container mt-4'>
-              <Row>
-                <Col sm='6' md='3' className='box'>
-                  <h5 className='mb-0'><a href='mailto:vdavila@ucsd.edu'>Email <span className='pink'>&#8594;</span></a></h5>
-                  <p >get in touch with me</p>
-                </Col>
-                <Col sm='6' md='3' className='box'>
-                  <h5 className='mb-0'><a href={resume} target='_blank'>Resume <span className='pink'>&#8594;</span></a></h5>
-                  <p >learn about my work experience</p>
-                </Col>
-                <Col sm='6' md='3' className='box'>
-                  <h5 className='mb-0'><a href='https://github.com/vividavila98' target='_blank'>Github <span className='pink'>&#8594;</span></a></h5>
-                  <p>analyze my code</p>
-                </Col>
-                <Col sm='6' md='3'>
-                  <h5 className='mb-0'><a href='https://www.codecademy.com/profiles/vdavila98' target='_blank'>Codecademy <span className='pink'>&#8594;</span></a></h5>
-                  <p >see my progress</p>
-                </Col>
-              </Row>
-            </div>
-          </footer>
-          <NavHashLink to='/#navigation'><p className='top mb-0 back'>&nbsp;Back to the top <span className='pink'>&#8593;</span></p></NavHashLink>
-	   </div>
+        </footer>
+        <NavHashLink to='/#navigation'><p className='top mb-0 back'>&nbsp;Back to the top <span className='pink'>&#8593;</span></p></NavHashLink>
+    </div>
     );
-  }
 }
 
-export default Homepage;

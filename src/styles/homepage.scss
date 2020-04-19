@@ -1,35 +1,17 @@
-$pink: #FF5851;
 $thick: 'Secular One', sans-serif;
+$dark: #172A45;
+$code: #64FFDA;
+$white: #CBD5F5;
+$box: #1D3152;
 
 /****** Header *****/
-p {
-    @media (max-width: 767.98px) {
-        font-size: 17px;
-    }
-}
-
-body {
-    overflow-x: hidden;
-    border: 50px solid white;
-    border-top: none;
-    font-family: 'Quicksand', sans-serif;
-    @media (max-width: 767.98px) {
-        border: none;
-    }
-}
-
 .homepage {
-    background-color: #F8F8F8;
+    background-color: $dark;
 }
-
-h1, h2 {
-    font-family: 'Secular One', sans-serif;
-}
-
 
 .header {
     height: 85vh;
-    background-color: #F8F8F8;
+    background-color: $dark;
     position: relative;
     display: flex;
     @media (max-width: 575.98px) {
@@ -38,7 +20,7 @@ h1, h2 {
 }
 
 .web-background {
-    background-image: url('../images/web_background.png');
+    background-image: url('../images/dark_background.png');
     background-size: cover;
 }
 
@@ -51,13 +33,14 @@ h1, h2 {
 
 .title {
     position: absolute;
-    font-size: 120px;
+    color: $white;
+    font-size: 6rem;
     font-family: 'Secular One', sans-serif;
     z-index: 1;
     line-height: 120px;
     margin-top: 4%;
     @media (max-width: 575.98px) {
-        font-size: 90px;
+        font-size: 5rem;
     }
 }
 
@@ -65,127 +48,82 @@ h1, h2 {
     position: absolute;
     z-index: 1;
     margin-left: 5%;
+    color: $code;
 }
 
 .intro-box {
     display: flex;
+    color: $white;
     align-items: flex-end;
 }
 
 .intro {
-    font-size: 25px;
-    max-width: 400px;
-    @media (max-width: 767.98px) {
-        font-size: 17px;
-    }
+    font-size: 1rem;
+    max-width: 500px;
     @media (max-width: 575.98px) {
-        font-size: 15px;
+        font-size: .88rem;
+        text-align: left;
     }
 }
 
 /***** About Me *****/
-.about-container {
-    margin-top: 5%;
-    padding-bottom: 5%;
+.about {
+    margin-top: 15%;
 }
-
 
 
 .about-text {
-    font-size: 115px;
-    line-height: 90px;
+    margin-left: 15%;
+    padding-top: 80px;
     @media (max-width: 767.98px) {
-        font-size: 80px;
+        padding-top: 0;
+        max-width: 100%;
+        margin-left: 0%;
+        margin-top: 10%;
     }
 }
 
-.about-period {
-    color: $pink;
-}
-
-.venn {
-    height: 500px;
-    width: 500px;
+.skills {
+    height: 700px;
+    width: 750px;
     @media (max-width: 767.98px) {
-        height: 200px;
-        width: 200px;
+        height: 700px;
+        width: 550px;
     }
 }
 
-.squiggle {
-    margin-left: 25px;
-}
-
-/***** Skills ******/
-.skills-text {
-    width: 400px;
-    line-height: 30px;
-    @media (max-width: 767.98px) {
-        width: 300px;
+/*** Projects ****/
+.projects {
+    margin: 15% 0;
+    /*.outline {
+        border: 1px solid $code;
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        top: 25%;
+    }*/
+    .box {
+        padding: 10%;
+        position: relative;
+        
+        padding-bottom: 2%;
+        background-color: $box;
+        margin-top: 8%;
+        text-align: left;
+        color: $white;
+        .info {
+            color: #ABB3CE;
+        }
+        .tech {
+            color: #ABB3CE;
+            padding-top: 20%;
+            font-size: .8rem;
+            word-spacing: 25px;
+            opacity: 90%;
+        }
     }
 }
 
-.bold {
-    font-family: 'Secular One', sans-serif;
-}
-
-.skills-container {
-    padding-bottom: 5%;
-    padding-right: 0%;
-}
-
-.skills-period {
-    color: $pink;
-    font-family: 'Secular One', sans-serif;
-    font-size: 60px;
-}
-
-.skills-list {
-    background-color: black;
-    width: 100%;
-    padding: 5%;
-}
-
-.skills-intro {
-    width: 425px;
-    @media (max-width: 767.98px) {
-        width: 300px;
-        margin-left: 0;
-    }
-}
-
-li {
-    list-style-type:none;
-    color: white;
-}
-
-/*** Work ****/
-.work-text {
-    font-size: 115px;
-    width: 100px;
-    line-height: 90px;
-    @media (max-width: 767.98px) {
-        font-size: 80px;
-    }
-}
-
-.selection {
-    display: flex;
-    align-items: flex-end;
-}
-
-.selection-text {
-    width: 350px;
-    line-height: 30px;
-    @media (max-width: 767.98px) {
-        width: 300px;
-    }
-}
-
-.black-period {
-    font-family: 'Secular One', sans-serif;
-    font-size: 60px;
-}
 
 /***** Medpius ****/
 .period {
@@ -320,7 +258,6 @@ footer {
         font-family: $thick;
         color: black;
         &:hover {
-            color: $pink;
             text-decoration: none;
         }
     }
@@ -331,10 +268,6 @@ footer {
         }
     }
     
-}
-
-.pink {
-    color: $pink;
 }
 
 .back {

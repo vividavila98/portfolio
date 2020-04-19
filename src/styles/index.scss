@@ -1,17 +1,42 @@
 @import './homepage';
 @import './navigation.scss';
-@import './project.scss';
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand|Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Secular+One&display=swap|Roboto+Mono&display=swap');
+
+$white: #CBD5F5;
+$code: #64FFDA;
 
 html, body {
     font-family: 'Quicksand-Regular', sans-serif;
     scroll-behavior: smooth;
-    font-size: 20px;
+    font-size: 18px;
     padding: 0;
+    color: $white;
 }
 
-p, a, h3 {
+p, a {
     font-family: 'Quicksand', sans-serif;
+    line-height: 35px;
+    color: $white;
+    @media (max-width: 767.98px) {
+        font-size: .88rem;
+    }
+}
+
+h1, h2, h3 {
+    font-family: 'Secular One', sans-serif;
+    color: $white;
+}
+
+.code {
+    font-family: 'Roboto Mono', monospace;
+    color: $code;
+}
+
+.line {
+    margin-left: 5px;
+    @media (max-width: 767.98px) {
+        display: none;
+    }
 }
 

@@ -1,10 +1,13 @@
-$pink: #FF5851;
+$white: #CBD5F5;
+$dark: #172A45;
+$code: #64FFDA;
+$orange: #ff8064;
 $thick: 'Secular One', sans-serif;
 
 a.navbar-brand, a.active {
-    color: black;
+    color: $white;
     &:hover {
-        color: $pink;
+        color: $orange;
     }
 }
 
@@ -14,23 +17,25 @@ a.active {
     padding-top: 35px;
     &:hover {
         text-decoration: none;
-        color: $pink;
+        color: $orange;
     }
 }
 
 button.contact-btn {
-    background-color: black;
+    background-color: $dark;
     padding: 5px 25px;
     display: inline-block;
-    border-radius: 16px;
+    border: 1px solid $code; 
+    border-radius: 5px;
     &:hover {
-        background-color: $pink;
-        border: none;
+        background-color: none;
+        border: 1px solid $orange;
     }
     a {
-        color: white;
+        color: $code;
         &:hover {
             text-decoration: none;
+            color: $orange;
         }
         @media (max-width: 767.98px) {
             background-color: white;
@@ -50,5 +55,5 @@ button.contact-btn {
 }
 
 .navigation {
-    background-color: white;
+    background-color: $dark;
 }
