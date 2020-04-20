@@ -58,7 +58,7 @@ export default function Homepage() {
         </section>*/}
         {/* Projects Intro */}
         <section id='projects' className='container-fluid text-center'>
-          <div className='container projects'>
+          <div className='container projects text-center'>
             <h3><span className='code'>03. </span>My Projects <img src={line} className='line' /></h3>
             <h5 className='code'>// UI/UX Development &amp; JavaScript Development</h5>
             <Row>
