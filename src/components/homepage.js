@@ -93,7 +93,7 @@ export default function Homepage() {
         <footer id='contact' className='container-fluid text-center'>
           <div className='container contact'>
             <h3><span className='code'>04. </span>Contact Me <img src={line} className='line' /></h3>
-            <h5 className='code mb-3'>// If you're interested in disucssing my work, email me!</h5>
+            <h5 className='code mb-4'>// If you're interested in disucssing my work, email me!</h5>
             <Row>
               <Col sm='6' md='3'>
                 <div className='box'>
