@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from './navigation';
 import { Row, Col } from 'reactstrap';
-import skills from '../images/skills.svg';
+import skills from '../images/skills.png';
 import '../styles/homepage.scss';
 import resume from '../images/Viviana_Davila_Resume.pdf'
 import { NavHashLink } from 'react-router-hash-link';
