@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "01b09261f8707b0ca6161390f756dd79",
+    "revision": "11628fc0b0b7f1bdee75dc7db181a49e",
     "url": "/index.html"
   },
   {
-    "revision": "af5f7b6be520f0a73f0a",
+    "revision": "e592acc74d1c3574e892",
     "url": "/static/css/2.b0bb7f2c.chunk.css"
   },
   {
-    "revision": "0fde2ad59a01c22221cf",
-    "url": "/static/css/main.dfbe2310.chunk.css"
+    "revision": "8b4bc1ed4697464079a5",
+    "url": "/static/css/main.44eacb21.chunk.css"
   },
   {
-    "revision": "af5f7b6be520f0a73f0a",
-    "url": "/static/js/2.23b55419.chunk.js"
+    "revision": "e592acc74d1c3574e892",
+    "url": "/static/js/2.521d1730.chunk.js"
   },
   {
-    "revision": "0fde2ad59a01c22221cf",
-    "url": "/static/js/main.835f385c.chunk.js"
+    "revision": "8b4bc1ed4697464079a5",
+    "url": "/static/js/main.259dea76.chunk.js"
   },
   {
     "revision": "0ac2b0fd5fd4af3be109",
     "url": "/static/js/runtime-main.8896086d.js"
   },
   {
-    "revision": "ca9669973e69cf0a8fa3696ead4e8a42",
-    "url": "/static/media/Viviana_Davila_Resume.ca966997.pdf"
+    "revision": "ec5d39a88ae941cbf46100edcd29c67a",
+    "url": "/static/media/Viviana_Davila_Resume.ec5d39a8.pdf"
   },
   {
     "revision": "64c2702d76b1738e13c48dfcc57b9af9",
@@ -40,7 +40,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/menu.8a69e4bb.svg"
   },
   {
-    "revision": "eaeed832a9a1607facdf2f29f7ec542b",
-    "url": "/static/media/skills.eaeed832.svg"
+    "revision": "41ca5f80663b532a44a1eff2f152df3a",
+    "url": "/static/media/skills.41ca5f80.png"
   }
 ]);
