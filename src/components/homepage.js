@@ -49,13 +49,20 @@ export default function Homepage() {
             </Row>
           </div>
         </section>
+        {/* Experience 
+        <section id='experience' className='container-fluid'>
+          <div className='container experience'>
+            <h3 className='text-center'><span className='code'>02. </span>Professional Experience <img src={line} className='line' /></h3>
+            <h5 className='code text-center'>// My work involving Web Development, Design, and Education</h5>
+          </div>
+        </section>*/}
         {/* Projects Intro */}
         <section id='projects' className='container-fluid text-center'>
           <div className='container projects'>
             <h3><span className='code'>03. </span>My Projects <img src={line} className='line' /></h3>
             <h5 className='code'>// UI/UX Development &amp; JavaScript Development</h5>
             <Row>
-              <Col md='12' lg='6' class='first-box'>
+              <Col md='12' lg='6'>
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Club Website</h6>
@@ -86,28 +93,36 @@ export default function Homepage() {
         <footer id='contact' className='container-fluid text-center'>
           <div className='container contact'>
             <h3><span className='code'>04. </span>Contact Me <img src={line} className='line' /></h3>
-            <h5 className='code'>// If you're interested in disucssing my work, email me!</h5>
+            <h5 className='code mb-3'>// If you're interested in disucssing my work, email me!</h5>
             <Row>
-              <Col sm='6' md='3' className='box'>
-                <h5 className='mb-0'><a href='mailto:vdavila@ucsd.edu'>Email <span className='pink'>&#8594;</span></a></h5>
-                <p >get in touch with me</p>
-              </Col>
-              <Col sm='6' md='3' className='box'>
-                <h5 className='mb-0'><a href={resume} target='_blank'>Resume <span className='pink'>&#8594;</span></a></h5>
-                <p >learn about my work experience</p>
-              </Col>
-              <Col sm='6' md='3' className='box'>
-                <h5 className='mb-0'><a href='https://github.com/vividavila98' target='_blank'>Github <span className='pink'>&#8594;</span></a></h5>
-                <p>analyze my code</p>
+              <Col sm='6' md='3'>
+                <div className='box'>
+                <h6 className='mb-0'><a href='mailto:vdavila@ucsd.edu'>Email <span className='code'>&#8594;</span></a></h6>
+                <p className='small'>get in touch with me</p>
+                </div>
               </Col>
               <Col sm='6' md='3'>
-                <h5 className='mb-0'><a href='https://www.codecademy.com/profiles/vdavila98' target='_blank'>Codecademy <span className='pink'>&#8594;</span></a></h5>
-                <p >see my progress</p>
+                <div  className='box'>
+                <h6 className='mb-0'><a href={resume} target='_blank'>Resume <span className='code'>&#8594;</span></a></h6>
+                <p className='small'>learn about my work experience</p>
+                </div>
+              </Col>
+              <Col sm='6' md='3'>
+                <div  className='box'>
+                <h6 className='mb-0'><a href='https://github.com/vividavila98' target='_blank'>Github <span className='code'>&#8594;</span></a></h6>
+                <p className='small'>analyze my code</p>
+                </div>
+              </Col>
+              <Col sm='6' md='3'>
+                <div  className='box'>
+                <h6 className='mb-0'><a href='https://www.codecademy.com/profiles/vdavila98' target='_blank'>Codecademy <span className='code'>&#8594;</span></a></h6>
+                <p className='small'>see my progress</p>
+                </div>
               </Col>
             </Row>
           </div>
         </footer>
-        <NavHashLink to='/#navigation'><p className='top mb-0 back'>&nbsp;Back to the top <span className='pink'>&#8593;</span></p></NavHashLink>
+        <NavHashLink to='/#navigation'><p className='top mb-0 back'>&nbsp;Back to the top <span className='code'>&#8593;</span></p></NavHashLink>
     </div>
     );
 }

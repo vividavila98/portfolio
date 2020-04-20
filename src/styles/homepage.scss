@@ -80,6 +80,7 @@ $box: #1D3152;
         max-width: 100%;
         margin-left: 0%;
         margin-top: 10%;
+        text-align: center;
     }
 }
 
@@ -90,6 +91,11 @@ $box: #1D3152;
         height: 700px;
         width: 550px;
     }
+}
+
+/**** Experience *****/
+.experience {
+    margin-top: 15%;
 }
 
 /*** Projects ****/
@@ -124,152 +130,28 @@ $box: #1D3152;
     }
 }
 
-
-/***** Medpius ****/
-.period {
-    font-size: 35px;
-}
-
-.medpius {
-    height: 360px;
-    padding-bottom: 30px;
-    background-color: #F5D33E;
-    flex-direction: column;
-    display: flex;
-    justify-content: flex-end;
-    p {
-        color: #F8F8F8;
-        opacity: 80%;
-    }
-    .name {
-        color: white;
-        font-family: 'Secular One', sans-serif;
-        margin-bottom: 0;
-    }
-    .info {
-        color: #1E7FC6;
-        font-family: 'Secular One', sans-serif;
-        width: 400px;
-    }
-    @media (max-width: 767.98px) {
-        .info {
-            width: 300px;
-        }
-    }
-}
-
-/***** CSSA ****/
-.cssa {
-    height: 360px;
-    padding-bottom: 30px;
-    background-color: #263477;
-    flex-direction: column;
-    display: flex;
-    justify-content: flex-end;
-    p {
-        color: #F8F8F8;
-        opacity: 80%;
-    }
-    .name {
-        color: white;
-        font-family: 'Secular One', sans-serif;
-        margin-bottom: 0;
-    }
-    .info {
-        color: #F5D33E;
-        font-family: 'Secular One', sans-serif;
-        width: 400px;
-    }
-    @media (max-width: 767.98px) {
-        .info {
-            width: 300px;
-        }
-    }
-}
-
-/***** Jamming ****/
-.project-container {
-    padding-bottom: 5%;
-}
-.jamming {
-    height: 360px;
-    padding-bottom: 30px;
-    background-color: #D34141;
-    flex-direction: column;
-    display: flex;
-    justify-content: flex-end;
-    p {
-        color: #F8F8F8;
-        opacity: 80%;
-    }
-    .name {
-        color: white;
-        font-family: 'Secular One', sans-serif;
-        margin-bottom: 0;
-    }
-    .info {
-        color: #C8D0F8;
-        font-family: $thick;
-        width: 400px;
-    }
-    @media (max-width: 767.98px) {
-        .info {
-            width: 300px;
-        }
-    }
-}
-
-/***** Ravenous ****/
-.ravenous {
-    height: 360px;
-    padding-bottom: 30px;
-    background-color: #1E7FC6;
-    flex-direction: column;
-    display: flex;
-    justify-content: flex-end;
-    p {
-        color: #F8F8F8;
-        opacity: 80%;
-    }
-    .name {
-        color: white;
-        font-family: $thick;
-        margin-bottom: 0;
-    }
-    .info {
-        color: #FBA8A3;
-        font-family: $thick;
-        width: 400px;
-    }
-    @media (max-width: 767.98px) {
-        .info {
-            width: 300px;
-        }
-    }
-}
-
 /**** Footer ****/
 footer {
     padding-bottom: 2%;
-    h5 {
-        font-family: $thick;
-    }
     a {
         font-family: $thick;
-        color: black;
+        color: #ABB3CE;
         &:hover {
             text-decoration: none;
         }
     }
     .box {
-        border-right: 1px lightgray solid;
-        @media (max-width: 575.98px) {
-            border-right: none;
-        }
+        background-color: $box;
+        text-align: left;
+        padding: 5%;
+        margin-bottom: 5%;
     }
     
 }
 
 .back {
-    font-size: 14px;
+    font-size: .9rem;
+    @media (max-width: 767.98px) {
+        text-align: center;
+    }
 }
