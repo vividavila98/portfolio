@@ -100,7 +100,7 @@ $box: #1D3152;
 
 /*** Projects ****/
 .projects {
-    margin: 15% 0;
+    margin-top: 15%;
     /*.outline {
         border: 1px solid $code;
         position: absolute;
@@ -132,6 +132,7 @@ $box: #1D3152;
 
 /**** Footer ****/
 footer {
+    margin-top: 15%;
     padding-bottom: 2%;
     a {
         font-family: $thick;
