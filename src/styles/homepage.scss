@@ -41,6 +41,7 @@ $box: #1D3152;
     margin-top: 4%;
     @media (max-width: 575.98px) {
         font-size: 5rem;
+        line-height: 100px;
     }
 }
 
@@ -61,8 +62,9 @@ $box: #1D3152;
     font-size: 1rem;
     max-width: 500px;
     @media (max-width: 575.98px) {
-        font-size: .88rem;
+        font-size: .80rem;
         text-align: left;
+        line-height: 25px;
     }
 }
 
@@ -138,6 +140,7 @@ footer {
         color: #ABB3CE;
         &:hover {
             text-decoration: none;
+            color: #ABB3CE;
         }
     }
     .box {
