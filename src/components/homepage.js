@@ -1,14 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navigation from './navigation';
-import { Row, Col } from 'reactstrap';
+import { 
+  Row, Col, Nav, NavItem, NavLink, TabContent, TabPane 
+} from 'reactstrap';
+import classnames from 'classnames';
 import skills from '../images/skills.png';
 import '../styles/homepage.scss';
 import resume from '../images/Viviana_Davila_Resume.pdf'
 import { NavHashLink } from 'react-router-hash-link';
-import { Link } from 'react-router-dom';
 import line from '../images/line.svg';
 
 export default function Homepage() {
+  const [activeTab, setActiveTab] = useState('1');
+
+  const toggle = (tab) => {
+    if(activeTab !== tab) {
+      setActiveTab(tab);
+    }
+  }
+
   return (
     <div className='homepage'>
       <Navigation />
@@ -22,7 +32,7 @@ export default function Homepage() {
                 <span><h3 className='title-caption text-center code'>Front-End Web Developer</h3></span><br/></h1>
             </div>
             <Col className='header intro-box'>
-              <p className='intro'>Hello! I’m a Front-End Web Developer based in San Diego, CA with an emphasis on utilizing ReactJS to build both simple mobile-responsive websites &amp; powerful, dynamic web applications. <br/> </p>
+              <p className='intro'>Hello! I’m a Front-End Web Developer based in San Diego, CA with an emphasis on utilizing ReactJS to build both simple mobile-responsive websites &amp; dynamic web applications. <br/> </p>
             </Col>
           </Row>
         </header>
@@ -49,13 +59,69 @@ export default function Homepage() {
             </Row>
           </div>
         </section>
-        {/* Experience 
+        {/* Experience*/} 
         <section id='experience' className='container-fluid'>
           <div className='container experience'>
             <h3 className='text-center'><span className='code'>02. </span>Professional Experience <img src={line} className='line' /></h3>
             <h5 className='code text-center'>// My work involving Web Development, Design, and Education</h5>
+            <div className='tabs text-center'>
+            <Row>
+            <Col xs="12" sm="12" md="4">
+              <Nav vertical>
+                <NavItem>
+                  <NavLink
+                    className={classnames({active: activeTab === '1'})}
+                    onClick={() => {
+                      toggle('1');
+                    }}
+                  >
+                    Wistly Internship
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    className={classnames({active: activeTab === '2'})}
+                    onClick={() => {
+                      toggle('2');
+                    }}
+                  >
+                    Juristerra Internship
+                  </NavLink>
+                </NavItem>
+              </Nav>
+            </Col>
+            <Col xs="12" sm="12" md="6">
+              <TabContent className='text-left' activeTab={activeTab}>
+                <TabPane tabId="1">
+                  <h5>Front-End Developer Intern <span className='code-color'>@ Wistly</span></h5>
+                  <p className = 'date'>February 2020 - Present</p>
+                  <p className='info'>
+                    <span className='code-color asterik'>*</span>
+                    Developing the Front-End side of a React Native application in collaboration with another intern
+                  </p>
+                  <p className='info'>
+                    <span className='code-color asterik'>*</span>
+                      Integrated Google Maps using an npm package in order to show the user's current location
+                    </p>
+                </TabPane>
+                <TabPane tabId="2">
+                  <h5>Front-End Developer Intern <span className='code-color'>@ Juristerra</span></h5>
+                  <p className = 'date'>June 2019 - August 2019</p>
+                  <p className='info'>
+                    <span className='code-color asterik'>*</span>
+                    Converted the Medpius web platform from HTML and CSS to ReactJS, Reactstrap, and SCSS
+                  </p>
+                  <p className='info'>
+                    <span className='code-color asterik'>*</span>
+                    Assisted the lead developer on refactoring the code for the Juristerra web platform 
+                    </p>
+                </TabPane>
+              </TabContent>
+            </Col>
+          </Row>
           </div>
-        </section>*/}
+          </div>
+        </section>
         {/* Projects Intro */}
         <section id='projects' className='container-fluid text-center'>
           <div className='container projects text-center'>
