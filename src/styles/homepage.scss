@@ -76,7 +76,7 @@ $box: #1D3152;
 
 .about-text {
     margin-left: 15%;
-    padding-top: 80px;
+    padding-top: 20%;
     @media (max-width: 767.98px) {
         padding-top: 0;
         max-width: 100%;
@@ -99,6 +99,9 @@ $box: #1D3152;
             padding: 10px 0;
             width: 200px;
             margin-right: 0;
+            &:hover {
+                color: #7b92cf;
+            }
         }
         a.active.nav-link {
             color: $code;
@@ -122,6 +125,7 @@ $box: #1D3152;
             }
         }
         .nav {
+            align-items: flex-end;
             @media (max-width: 767.98px) {
                 align-items: center;
                 margin: 5% 0;
@@ -141,6 +145,14 @@ $box: #1D3152;
         top: 25%;
     }*/
     .box {
+        a {
+            color: $white;
+            font-family: 'Secular One', sans-serif;
+            &:hover {
+                text-decoration: none;
+                color: #ff8064;
+            }
+        }
         padding: 10%;
         position: relative;
         

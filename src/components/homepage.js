@@ -132,7 +132,7 @@ export default function Homepage() {
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Club Website</h6>
-                  <h5>Cognitive Science Student Assoc.</h5>
+                  <a href='https://cssa-ucsd.org/index.html' target='_blank'><h5>Cognitive Science Student Assoc.</h5></a>
                   <p className='info'>
                     A resource on how 
                     students can get involved in the Cognitive 
@@ -145,11 +145,11 @@ export default function Homepage() {
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Web Application</h6>
-                  <h5>Ravenous</h5>
+                  <a href='https://vd-ravenous.herokuapp.com/' target='_blank'><h5>Ravenous</h5></a>
                   <p className='info'>
                     A tool to search for businesses matching your inputted criteria.
                   </p>
-                  <p className='tech'>JavaScript ReactJS Axios</p>
+                  <p className='tech'>JavaScript ReactJS Yelp-API Axios</p>
                 </div>
               </Col>
             </Row>
@@ -161,28 +161,22 @@ export default function Homepage() {
             <h3><span className='code'>04. </span>Contact Me <img src={line} className='line' /></h3>
             <h5 className='code mb-4'>// If you're interested in disucssing my work, email me!</h5>
             <Row>
-              <Col sm='6' md='3'>
+              <Col sm='12' md='4'>
                 <div className='box'>
                 <h6 className='mb-0'><a href='mailto:vdavila@ucsd.edu'>Email <span className='code'>&#8594;</span></a></h6>
                 <p className='small'>get in touch with me</p>
                 </div>
               </Col>
-              <Col sm='6' md='3'>
+              <Col sm='12' md='4'>
                 <div  className='box'>
                 <h6 className='mb-0'><a href={resume} target='_blank'>Resume <span className='code'>&#8594;</span></a></h6>
                 <p className='small'>learn about my work experience</p>
                 </div>
               </Col>
-              <Col sm='6' md='3'>
+              <Col sm='12' md='4'>
                 <div  className='box'>
                 <h6 className='mb-0'><a href='https://github.com/vividavila98' target='_blank'>Github <span className='code'>&#8594;</span></a></h6>
                 <p className='small'>analyze my code</p>
-                </div>
-              </Col>
-              <Col sm='6' md='3'>
-                <div  className='box'>
-                <h6 className='mb-0'><a href='https://www.codecademy.com/profiles/vdavila98' target='_blank'>Codecademy <span className='code'>&#8594;</span></a></h6>
-                <p className='small'>see my progress</p>
                 </div>
               </Col>
             </Row>

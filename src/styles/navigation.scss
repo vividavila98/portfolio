@@ -30,6 +30,7 @@ button.contact-btn {
     &:hover {
         background-color: none;
         border: 1px solid $orange;
+        opacity: 100;
     }
     a {
         color: $code;
