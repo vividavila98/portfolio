@@ -5,10 +5,13 @@ import {
 } from 'reactstrap';
 import classnames from 'classnames';
 import skills from '../images/skills.png';
+//import github from '../images/git.png';
+//import link from '../images/link.png';
 import '../styles/homepage.scss';
-import resume from '../images/Viviana_Davila_Resume.pdf'
 import { NavHashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import line from '../images/line.svg';
+import Footer from './footer';
 
 export default function Homepage() {
   const [activeTab, setActiveTab] = useState('1');
@@ -41,7 +44,7 @@ export default function Homepage() {
           <div className='container about'>
             <Row>
             <Col md='12' lg='6'>
-                <h3><span className='code'>01. </span>About Me <img src={line} className='line' /></h3>
+                <h3><span className='code'>01. </span>About Me <img src={line} className='line' alt='line'/></h3>
                 <h5 className='code'>// More about me as a Web Developer</h5>
                 <img src={skills} className='skills img-fluid' alt='skills'/>
               </Col>
@@ -62,7 +65,7 @@ export default function Homepage() {
         {/* Experience*/} 
         <section id='experience' className='container-fluid'>
           <div className='container experience'>
-            <h3 className='text-center'><span className='code'>02. </span>Professional Experience <img src={line} className='line' /></h3>
+            <h3 className='text-center'><span className='code'>02. </span>Professional Experience <img src={line} className='line' alt='line'/></h3>
             <h5 className='code text-center'>// My work involving Web Development, Design, and Education</h5>
             <div className='tabs text-center'>
             <Row>
@@ -125,29 +128,45 @@ export default function Homepage() {
         {/* Projects Intro */}
         <section id='projects' className='container-fluid text-center'>
           <div className='container projects text-center'>
-            <h3><span className='code'>03. </span>My Projects <img src={line} className='line' /></h3>
+            <h3><span className='code'>03. </span>My Projects <img src={line} className='line' alt='line'/></h3>
             <h5 className='code'>// UI/UX Development &amp; JavaScript Development</h5>
             <Row>
-              <Col md='12' lg='6'>
+            <Col md='12' lg='4'>
+              <div className='outline'></div>
+                <div className='box'>
+                  <h6 className='code'>Mobile Application</h6>
+                  <Link to='/moneywise'><h5>Money Wise</h5></Link>
+                  <p className='info'>
+                    A tool to track your spending habits and offer insights on how to budget.
+                  </p>
+                  <p className='tech'>React-Native JavaScript Axios SCSS</p>
+                </div>
+              </Col>
+              <Col md='12' lg='4'>
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Club Website</h6>
-                  <a href='https://cssa-ucsd.org/index.html' target='_blank'><h5>Cognitive Science Student Assoc.</h5></a>
+                  <a href='https://cssa-ucsd.org/index.html' target='_blank' rel="noopener noreferrer"
+                  ><h5>CSSA</h5></a>
                   <p className='info'>
                     A resource on how 
                     students can get involved in the Cognitive 
                     Science community. 
                   </p>
+                 { /*<p>
+                    <img src={github} className='img-fluid git' alt='github' height='30' width='30'/>
+                    <img src={link} className='img-fluid' alt='github' height='25' width='25'/>
+                 </p>*/}
                   <p className='tech'>HTML CSS3 Bootstrap</p>
                 </div>
               </Col>
-              <Col md='12' lg='6'>
+              <Col md='12' lg='4'>
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Web Application</h6>
-                  <a href='https://vd-ravenous.herokuapp.com/' target='_blank'><h5>Ravenous</h5></a>
+                  <a href='https://vd-ravenous.herokuapp.com/' target='_blank' rel="noopener noreferrer"><h5>Ravenous</h5></a>
                   <p className='info'>
-                    A tool to search for businesses matching your inputted criteria.
+                    A tool to search for businesses to recieve information on it's address, ratings, and number of reviews. 
                   </p>
                   <p className='tech'>JavaScript ReactJS Yelp-API Axios</p>
                 </div>
@@ -156,32 +175,7 @@ export default function Homepage() {
           </div>
         </section>
         {/* Footer */ }
-        <footer id='contact' className='container-fluid text-center'>
-          <div className='container contact'>
-            <h3><span className='code'>04. </span>Contact Me <img src={line} className='line' /></h3>
-            <h5 className='code mb-4'>// If you're interested in disucssing my work, email me!</h5>
-            <Row>
-              <Col sm='12' md='4'>
-                <div className='box'>
-                <h6 className='mb-0'><a href='mailto:vdavila@ucsd.edu'>Email <span className='code'>&#8594;</span></a></h6>
-                <p className='small'>get in touch with me</p>
-                </div>
-              </Col>
-              <Col sm='12' md='4'>
-                <div  className='box'>
-                <h6 className='mb-0'><a href={resume} target='_blank'>Resume <span className='code'>&#8594;</span></a></h6>
-                <p className='small'>learn about my work experience</p>
-                </div>
-              </Col>
-              <Col sm='12' md='4'>
-                <div  className='box'>
-                <h6 className='mb-0'><a href='https://github.com/vividavila98' target='_blank'>Github <span className='code'>&#8594;</span></a></h6>
-                <p className='small'>analyze my code</p>
-                </div>
-              </Col>
-            </Row>
-          </div>
-        </footer>
+        <Footer />
         <NavHashLink to='/#navigation'><p className='top mb-0 back'>&nbsp;Back to the top <span className='code'>&#8593;</span></p></NavHashLink>
     </div>
     );

@@ -1,0 +1,29 @@
+$thick: 'Secular One', sans-serif;
+$box: #1D3152;
+
+footer {
+    margin-top: 15%;
+    padding-bottom: 2%;
+    a {
+        font-family: $thick;
+        color: #ABB3CE;
+        &:hover {
+            text-decoration: none;
+            color: #ABB3CE;
+        }
+    }
+    .box {
+        background-color: $box;
+        text-align: left;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    
+}
+
+.back {
+    font-size: .9rem;
+    @media (max-width: 767.98px) {
+        text-align: center;
+    }
+}

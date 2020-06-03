@@ -1,9 +1,11 @@
 @import './homepage';
 @import './navigation.scss';
+@import './moneywise.scss';
+@import './footer.scss';
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Secular+One&display=swap|Roboto+Mono&display=swap');
 
-$white: #CBD5F5;
+$white: #FFFF;
 $code: #64FFDA;
 
 html, body {
@@ -14,7 +16,7 @@ html, body {
     color: $white;
 }
 
-p, a {
+p, a, li {
     font-family: 'Quicksand', sans-serif;
     line-height: 35px;
     color: $white;

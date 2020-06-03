@@ -1,7 +1,7 @@
 $thick: 'Secular One', sans-serif;
 $dark: #172A45;
 $code: #64FFDA;
-$white: #CBD5F5;
+$white: #FFFF;
 $box: #1D3152;
 
 /****** Header *****/
@@ -145,6 +145,9 @@ $box: #1D3152;
         top: 25%;
     }*/
     .box {
+        .git {
+            margin-right: 15px;
+        }
         a {
             color: $white;
             font-family: 'Secular One', sans-serif;
@@ -155,7 +158,6 @@ $box: #1D3152;
         }
         padding: 10%;
         position: relative;
-        
         padding-bottom: 2%;
         background-color: $box;
         margin-top: 8%;
@@ -166,8 +168,8 @@ $box: #1D3152;
         }
         .tech {
             color: #ABB3CE;
-            padding-top: 20%;
-            font-size: .8rem;
+            padding-top: 5%;
+            font-size: .7rem;
             word-spacing: 25px;
         }
     }

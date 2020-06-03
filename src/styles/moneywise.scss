@@ -1,0 +1,100 @@
+$thick: 'Secular One', sans-serif;
+$dark: #172A45;
+$code: #64FFDA;
+$white: #FFFF;
+$box: #1D3152;
+
+/****** Header *****/
+.money {
+    background-color: $dark;
+    h4, h5 {
+        color: $white;
+    }
+
+    .arrow {
+        background-color: $dark;
+        border: none;
+        &:hover {
+            background-color: $dark;
+        }
+        &:focus, &:active {
+            outline: none !important;
+            box-shadow: none;
+            background-color: $dark;
+         }
+    }
+}
+
+.money-header {
+    height: 55vh;
+    background-color: $dark;
+    position: relative;
+    display: flex;
+    @media (max-width: 575.98px) {
+        height: 90vh;
+    }
+}
+
+.web-background {
+    background-image: url('../images/dark_background.png');
+    background-size: cover;
+}
+
+.money-title-box {
+    position: absolute;
+    display: flex;
+    height: 45vh;
+    justify-content: center;
+}
+
+.money-title {
+    position: absolute;
+    color: $white;
+    font-size: 6rem;
+    font-family: 'Secular One', sans-serif;
+    z-index: 1;
+    line-height: 120px;
+    margin-top: 4%;
+    @media (max-width: 575.98px) {
+        font-size: 5rem;
+        line-height: 100px;
+    }
+}
+
+.money-title-caption {
+    position: absolute;
+    z-index: 1;
+    margin-left: 5%;
+    color: $code;
+}
+
+/***** Context *****/
+.context {
+    margin-top: 5%;
+    .card {
+        border: none;
+    }
+}
+
+.text-box {
+    border: none;
+    background-color: $box;
+    p {
+        max-width: 90%;
+    }
+    .sub {
+        margin-top: 8%;
+    }
+    .thumbnail {
+        height: 40%;
+        width: 60%;
+        margin: 2% 0;
+    }
+    .list {
+        color: $white;
+        margin: 1rem 20%;
+        @media (max-width: 575.98px) {
+            margin-left: 0;
+        }
+    }
+}

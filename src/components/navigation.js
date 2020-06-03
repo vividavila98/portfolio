@@ -19,7 +19,7 @@ export default function Navigation() {
       <div className='navigation' id='navigation'>
           <Navbar expand='md'>
               <NavbarBrand href='/'><strong className='code'>V</strong></NavbarBrand>
-    <NavbarToggler onClick={toggler}><span className='menu'><img src={menu} /></span></NavbarToggler>
+    <NavbarToggler onClick={toggler}><span className='menu'><img src={menu} alt='hamburger'/></span></NavbarToggler>
               <Collapse isOpen={isOpen} navbar>
                   <Nav className='ml-auto' navbar>
                       <NavItem>
@@ -35,7 +35,7 @@ export default function Navigation() {
                           <NavHashLink to='/#contact'><span className='code'>04. </span>Contact</NavHashLink>
                       </NavItem>
                       <NavItem>
-                          <Button className='contact-btn'><a href={resume} target='_blank'>Resume</a></Button>
+                          <Button className='contact-btn'><a href={resume} target='_blank' rel="noopener noreferrer">Resume</a></Button>
                       </NavItem>
                   </Nav>
               </Collapse>
