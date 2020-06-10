@@ -139,7 +139,7 @@ export default function Homepage() {
                   <p className='info'>
                     A tool to track your spending habits and offer insights on how to budget.
                   </p>
-                  <p className='tech'>React-Native JavaScript Axios SCSS</p>
+                  <p className='tech'>React-Native JavaScript ExpressJS</p>
                 </div>
               </Col>
               <Col md='12' lg='4'>

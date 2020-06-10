@@ -8,7 +8,7 @@ export default function App() {
 
     return (
       <div className='App'>
-			    <BrowserRouter>
+			<BrowserRouter basename='/'>
               <Switch>
                   <Route
                       path='/' exact

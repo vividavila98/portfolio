@@ -21,10 +21,10 @@ import Navigation from './navigation';
 import Footer from './footer';
 
 export default function Moneywise() {
-    const [isOverviewOpen, setIsOverviewOpen] = useState(false);
+    const [isOverviewOpen, setIsOverviewOpen] = useState(true);
     const [isContextOpen, setIsContextOpen] = useState(false);
     const [isProcessOpen, setIsProcessOpen] = useState(false);
-    const [isSolutionOpen, setIsSolutionOpen] = useState(true);
+    const [isSolutionOpen, setIsSolutionOpen] = useState(false);
 
     const toggleOverview = () => setIsOverviewOpen(!isOverviewOpen);
     const toggleContext = () => setIsContextOpen(!isContextOpen);
