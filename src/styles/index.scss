@@ -33,7 +33,7 @@ h1, h2, h3 {
 
 .code {
     font-family: 'Roboto Mono', monospace;
-    color: $code;
+    color: $code !important;
 }
 
 .code-color {
