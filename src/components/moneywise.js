@@ -8,14 +8,19 @@ import down from '../images/down-arrow.svg';
 import clarity from '../images/clarity.png';
 import ynab from '../images/ynab.png';
 import pie from '../images/pie.png';
+import screens from '../images/screensbg.png';
+import money from '../images/moneybg.png';
+import github from '../images/git.png';
 import Navigation from './navigation';
 import Footer from './footer';
 
 export default function Moneywise() {
+    const [isOverviewOpen, setIsOverviewOpen] = useState(false);
     const [isContextOpen, setIsContextOpen] = useState(false);
     const [isProcessOpen, setIsProcessOpen] = useState(false);
     const [isSolutionOpen, setIsSolutionOpen] = useState(true);
 
+    const toggleOverview = () => setIsOverviewOpen(!isOverviewOpen);
     const toggleContext = () => setIsContextOpen(!isContextOpen);
     const toggleProcess = () => setIsProcessOpen(!isProcessOpen);
     const toggleSolution = () => setIsSolutionOpen(!isSolutionOpen);
@@ -35,9 +40,34 @@ export default function Moneywise() {
                   <Col className='money-header'></Col>
               </Row>
           </header>
+        {/* Project Overview */}
+        <section className='context container'>
+            <h3><span className='code'>01. </span>Project Overview<span><Button className='arrow' onClick={toggleOverview}><img src={isOverviewOpen? up : down } alt='arrow'/></Button></span></h3>
+            <Collapse isOpen={isOverviewOpen}>
+                <Card>
+                    <CardBody className='text-box'>
+                        <h4>Introducting Money Wise</h4>
+                        <p style={{color: 'gray', fontStyle: 'italic'}} className='mb-0'>April 2020 - Present</p>
+                        <img src={money} className='thumbnail img-fluid' alt='money wise'/>
+                        <h5>Concept</h5>
+                        <p>
+                        Money Wise helps users stay on track with the budgetary 50% needs, 30% wants, and 20% savings rule by monitoring 
+                        their bank account and offering insights through data visualizations. 
+                        </p>
+                        <h5>My Role</h5>
+                        <p>UX/UI Designer, Mobile Developer</p>
+                        <h5>Tech Stack</h5>
+                        <p>
+                        React Native, JavaScript, ExpressJS, Firebase, Plaid API 
+                        </p>
+                        <a href='#' target='_blank'><img src={github} className='github'/></a>
+                    </CardBody>
+                </Card>
+            </Collapse>
+</section>
           {/* Context and Challenge */}
           <section className='context container'>
-              <h3><span className='code'>01. </span>Context &amp; Challenge<span><Button className='arrow' onClick={toggleContext}><img src={isContextOpen? up : down } alt='arrow'/></Button></span></h3>
+              <h3><span className='code'>02. </span>Context &amp; Challenge<span><Button className='arrow' onClick={toggleContext}><img src={isContextOpen? up : down } alt='arrow'/></Button></span></h3>
               <Collapse isOpen={isContextOpen}>
                   <Card>
                       <CardBody className='text-box'>
@@ -69,7 +99,7 @@ export default function Moneywise() {
           </section>
           {/* Process and Insight */}
           <section className='context container'>
-              <h3><span className='code'>02. </span>Process &amp; Insight<span><Button className='arrow' onClick={toggleProcess}><img src={isProcessOpen? up : down } alt='arrow'/></Button></span></h3>
+              <h3><span className='code'>03. </span>Process &amp; Insight<span><Button className='arrow' onClick={toggleProcess}><img src={isProcessOpen? up : down } alt='arrow'/></Button></span></h3>
              <Collapse isOpen={isProcessOpen}>
                  <Card>
                  <CardBody className='text-box'>
@@ -116,33 +146,25 @@ export default function Moneywise() {
           </section>
           {/* Solution */}
           <section className='context container'>
-              <h3><span className='code'>03. </span>My Solution<span><Button className='arrow' onClick={toggleSolution}><img src={isSolutionOpen? up : down } alt='arrow'/></Button></span></h3>
+              <h3><span className='code'>04. </span>My Solution<span><Button className='arrow' onClick={toggleSolution}><img src={isSolutionOpen? up : down } alt='arrow'/></Button></span></h3>
               <Collapse isOpen={isSolutionOpen}>
                   <Card>
                       <CardBody className='text-box'>
                           <h4>30 / 50 / 20 Rule</h4>
-                          <div className='text-center'><img src={pie} className='thumbnail text-center' alt='pie chart'/></div>
-                            <p>
-                            As a self-taught Front-End Web Developer, I am constantly learning new technologies 
-                            through online tutorials and internships, with React Native being one of them. I wanted 
-                            to explore the mobile development process even more to feel fully proficient in React Native. 
-                            Because of this, I decided to challenge myself by building a personal financial budgeting application 
-                            to both solidify my technical skills and improve how I manage my money. 
-                            </p>
-                            <h4 className='sub'>Problem</h4>
-                            <p>
-                            Creating and maintaining a budget is one of the most effective ways to manage your money wisely. Deciding 
-                            to create a budget is a great start, but it leads to a multitude of questions: How exactly do I split up my 
-                            income? How much money am I supposed to save? How do I know when I’ve spent too much money? These types of 
-                            questions is what makes budgeting intimidating and even overwhelming to some people. Budgeting needs to be simple 
-                            enough to start and reassuring enough to continue maintaining it. 
-                            </p>
-                            <h4 className='sub'>Project Goals &amp; Objectives</h4>
-                            <p>
-                            My goal is to create an application for people who don’t know how to start a budget or don’t know how to 
-                            maintain one. I want it to be simple enough for people to be able to start budgeting right away, and reassuring 
-                            enough for people to want to continue maintaining their budget. 
-                            </p>
+                          <img src={screens} className='thumbnail img-fluid' alt='screens'/>
+                          <p>
+                              Introducting Money Wise: a personal financial budgeting application that teaches users to follow the 
+                              50 / 30 / 20 rule when distributing their income among expenses. Why the 50 / 30 / 20 rule? It makes budgeting as simple as
+                              possible for users who don't want to overwhelm themselves with figuring out how much money should go into different categories.
+                          </p>
+                          <h4 className='sub'>Core Features</h4>
+                          <h5>50/30/20 Visualization</h5>
+                          <h5>Monthly Income</h5>
+                          <h5>Monthly Spendings on Needs</h5>
+                          <h5>Monthly Spendings on Wants</h5>
+                          <h5>Monthly Savings</h5>
+                          <h4 className='sub'>Working With The Plaid API</h4>
+
                         </CardBody>
                     </Card>
                 </Collapse>

@@ -135,7 +135,7 @@ export default function Homepage() {
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Mobile Application</h6>
-                  <Link to='/moneywise'><h5>Money Wise</h5></Link>
+                  <a href='/moneywise'><h5>Money Wise</h5></a>
                   <p className='info'>
                     A tool to track your spending habits and offer insights on how to budget.
                   </p>
