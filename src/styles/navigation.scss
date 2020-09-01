@@ -28,7 +28,8 @@ button.contact-btn {
     border: 1px solid $code; 
     border-radius: 5px;
     &:hover {
-        background-color: none;
+        background-color: $dark;
+        opacity: 100%;
         border: 1px solid $orange;
     }
     a {
@@ -36,6 +37,7 @@ button.contact-btn {
         &:hover {
             text-decoration: none;
             color: $orange;
+            opacity: 100%;
         }
         @media (max-width: 767.98px) {
             background-color: $dark;

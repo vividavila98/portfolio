@@ -35,7 +35,7 @@ export default function Homepage() {
                 <span><h3 className='title-caption text-center code'>Front-End Web Developer</h3></span><br/></h1>
             </div>
             <Col className='header intro-box'>
-              <p className='intro'>Hello! I’m a Front-End Web Developer based in San Diego, CA with an emphasis on utilizing ReactJS to build both simple mobile-responsive websites &amp; dynamic web applications. <br/> </p>
+              <p className='intro'>Hello! I’m a Front-End Web Developer based in Los Angeles, CA with an emphasis on utilizing ReactJS to build both simple mobile-responsive websites &amp; dynamic web applications. <br/> </p>
             </Col>
           </Row>
         </header>
@@ -134,12 +134,12 @@ export default function Homepage() {
             <Col md='12' lg='4'>
               <div className='outline'></div>
                 <div className='box'>
-                  <h6 className='code'>Mobile Application</h6>
-                  <a href='/moneywise'><h5>Money Wise</h5></a>
+                  <h6 className='code'>Web Application</h6>
+                  <a href='https://github.com/vividavila98/Login-Practice'><h5>Money Wise</h5></a>
                   <p className='info'>
                     A tool to track your spending habits and offer insights on how to budget.
                   </p>
-                  <p className='tech'>React-Native JavaScript ExpressJS</p>
+                  <p className='tech'> JavaScript ReactJS ExpressJS</p>
                 </div>
               </Col>
               <Col md='12' lg='4'>
@@ -169,6 +169,17 @@ export default function Homepage() {
                     A tool to search for businesses to recieve information on it's address, ratings, and number of reviews. 
                   </p>
                   <p className='tech'>JavaScript ReactJS Yelp-API Axios</p>
+                </div>
+              </Col>
+              <Col md='12' lg='4' offset='3'>
+              <div className='outline'></div>
+                <div className='box'>
+                  <h6 className='code'>Web Application</h6>
+                  <a href='https://objective-liskov-b878bd.netlify.app/' target='_blank' rel="noopener noreferrer"><h5>Shortly</h5></a>
+                  <p className='info'>
+                    A tool to shorten your link, as apart of a mock website designed by FrontEnd Mentors. 
+                  </p>
+                  <p className='tech'>TypeScript ReactJS Redux  RelLink-API  Axios</p>
                 </div>
               </Col>
             </Row>
