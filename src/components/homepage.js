@@ -35,7 +35,7 @@ export default function Homepage() {
                 <span><h3 className='title-caption text-center code'>Front-End Web Developer</h3></span><br/></h1>
             </div>
             <Col className='header intro-box'>
-              <p className='intro'>Hello! I’m a Front-End Web Developer based in Los Angeles, CA with an emphasis on utilizing ReactJS to build both simple mobile-responsive websites &amp; dynamic web applications. <br/> </p>
+              <p className='intro'>Hello! I’m a Front-End Web Developer based in Los Angeles, CA with an emphasis on utilizing <span className="code">ReactJS</span> to build both simple mobile-responsive websites &amp; dynamic web applications. <br/> </p>
             </Col>
           </Row>
         </header>
@@ -71,14 +71,14 @@ export default function Homepage() {
             <Row>
             <Col xs="12" sm="12" md="4">
               <Nav vertical>
-                <NavItem>
+              <NavItem>
                   <NavLink
                     className={classnames({active: activeTab === '1'})}
                     onClick={() => {
                       toggle('1');
                     }}
                   >
-                    Wistly Internship
+                    GrowthMed Job
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -88,6 +88,16 @@ export default function Homepage() {
                       toggle('2');
                     }}
                   >
+                    Wistly Internship
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    className={classnames({active: activeTab === '3'})}
+                    onClick={() => {
+                      toggle('3');
+                    }}
+                  >
                     Juristerra Internship
                   </NavLink>
                 </NavItem>
@@ -95,28 +105,36 @@ export default function Homepage() {
             </Col>
             <Col xs="12" sm="12" md="6">
               <TabContent className='text-left' activeTab={activeTab}>
-                <TabPane tabId="1">
-                  <h5>Front-End Developer Intern <span className='code-color'>@ Wistly</span></h5>
-                  <p className = 'date'>February 2020 - Present</p>
+              <TabPane tabId="1">
+                  <h5>Front-End Developer<span className='code-color'> @ GrowthMed</span></h5>
+                  <p className = 'date'> August 2020 - Present </p>
                   <p className='info'>
                     <span className='code-color asterik'>*</span>
-                    Developing the Front-End side of a React Native application in collaboration with another intern
+                    Assist lead developer in building websites for a variety of doctors' practices.
+                  </p>
+                </TabPane>
+                <TabPane tabId="2">
+                  <h5>Front-End Developer Intern <span className='code-color'>@ Wistly</span></h5>
+                  <p className = 'date'>February 2020 - October 2020</p>
+                  <p className='info'>
+                    <span className='code-color asterik'>*</span>
+                    Developed the Front-End side of <a href="https://wistly.io/" target="_blank" rel="noopener noreferrer" class="code">Wisty</a>: a React Native application in collaboration with another intern
                   </p>
                   <p className='info'>
                     <span className='code-color asterik'>*</span>
                       Integrated Google Maps using an npm package in order to show the user's current location
                     </p>
                 </TabPane>
-                <TabPane tabId="2">
+                <TabPane tabId="3">
                   <h5>Front-End Developer Intern <span className='code-color'>@ Juristerra</span></h5>
                   <p className = 'date'>June 2019 - August 2019</p>
                   <p className='info'>
                     <span className='code-color asterik'>*</span>
-                    Converted the Medpius web platform from HTML and CSS to ReactJS, Reactstrap, and SCSS
+                    Converted the <a href="https://www.medpius.com/" target="_blank" rel="noopener noreferrer" class="code">Medpius</a> web platform from HTML and CSS to ReactJS, Reactstrap, and SCSS
                   </p>
                   <p className='info'>
                     <span className='code-color asterik'>*</span>
-                    Assisted the lead developer on refactoring the code for the Juristerra web platform 
+                    Assisted the lead developer on refactoring the code for the <a href="https://www.juristerra.net/" target="_blank" rel="noopener noreferrer" class="code">Juristerra</a> web platform 
                     </p>
                 </TabPane>
               </TabContent>
@@ -131,7 +149,7 @@ export default function Homepage() {
             <h3><span className='code'>03. </span>My Projects <img src={line} className='line' alt='line'/></h3>
             <h5 className='code'>// UI/UX Development &amp; JavaScript Development</h5>
             <Row>
-            <Col md='12' lg='4'>
+           { /*<Col md='12' lg='4'>
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Web Application</h6>
@@ -141,12 +159,12 @@ export default function Homepage() {
                   </p>
                   <p className='tech'> JavaScript ReactJS ExpressJS</p>
                 </div>
-              </Col>
+                  </Col>*/}
               <Col md='12' lg='4'>
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Club Website</h6>
-                  <a href='https://cssa-ucsd.org/index.html' target='_blank' rel="noopener noreferrer"
+                  <a href='https://cssa-ucsd.org/2019-2020/index.html' target='_blank' rel="noopener noreferrer"
                   ><h5>CSSA</h5></a>
                   <p className='info'>
                     A resource on how 
@@ -164,14 +182,14 @@ export default function Homepage() {
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Web Application</h6>
-                  <a href='https://vd-ravenous.herokuapp.com/' target='_blank' rel="noopener noreferrer"><h5>Ravenous</h5></a>
+                  <a href='https://objective-aryabhata-7249cc.netlify.app/' target='_blank' rel="noopener noreferrer"><h5>Ravenous</h5></a>
                   <p className='info'>
                     A tool to search for businesses to recieve information on it's address, ratings, and number of reviews. 
                   </p>
                   <p className='tech'>JavaScript ReactJS Yelp-API Axios</p>
                 </div>
               </Col>
-              <Col md='12' lg='4' offset='3'>
+              <Col md='12' lg='4'>
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Web Application</h6>

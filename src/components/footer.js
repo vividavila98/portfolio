@@ -10,12 +10,12 @@ export default function Footer() {
     return (
         <footer id='contact' className='container-fluid text-center'>
           <div className='container contact'>
-            <h3><span className='code'></span>Contact Me <img src={line} className='line' alt='line' /></h3>
+            <h3><span className='code'>04.</span>Contact Me <img src={line} className='line' alt='line' /></h3>
             <h5 className='code mb-4'>// If you're interested in disucssing my work, email me!</h5>
             <Row>
               <Col sm='12' md='4'>
                 <div className='box'>
-                <h6 className='mb-0'><a href='mailto:vdavila@ucsd.edu'>Email <span className='code'>&#8594;</span></a></h6>
+                <h6 className='mb-0'><a href='mailto:vividavila98@gmail.com'>Email <span className='code'>&#8594;</span></a></h6>
                 <p className='small'>get in touch with me</p>
                 </div>
               </Col>

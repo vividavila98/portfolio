@@ -34,9 +34,9 @@ export default function Navigation() {
                       <NavItem>
                           <NavHashLink to='/#contact'><span className='code'>04. </span>Contact</NavHashLink>
                       </NavItem>
-                      <NavItem>
+                      {/*<NavItem>
                           <Button className='contact-btn'><a href={resume} target='_blank' rel="noopener noreferrer">Resume</a></Button>
-                      </NavItem>
+                      </NavItem>*/}
                   </Nav>
               </Collapse>
           </Navbar>
