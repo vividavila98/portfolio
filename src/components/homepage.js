@@ -118,7 +118,7 @@ export default function Homepage() {
                   <p className = 'date'>February 2020 - October 2020</p>
                   <p className='info'>
                     <span className='code-color asterik'>*</span>
-                    Developed the Front-End side of <a href="https://wistly.io/" target="_blank" rel="noopener noreferrer" class="code">Wisty</a>: a React Native application in collaboration with another intern
+                    Developed the Front-End side of <a href="https://wistly.io/" target="_blank" rel="noopener noreferrer" className="code">Wisty</a>: a React Native application in collaboration with another intern
                   </p>
                   <p className='info'>
                     <span className='code-color asterik'>*</span>
@@ -130,11 +130,11 @@ export default function Homepage() {
                   <p className = 'date'>June 2019 - August 2019</p>
                   <p className='info'>
                     <span className='code-color asterik'>*</span>
-                    Converted the <a href="https://www.medpius.com/" target="_blank" rel="noopener noreferrer" class="code">Medpius</a> web platform from HTML and CSS to ReactJS, Reactstrap, and SCSS
+                    Converted the <a href="https://www.medpius.com/" target="_blank" rel="noopener noreferrer" className="code">Medpius</a> web platform from HTML and CSS to ReactJS, Reactstrap, and SCSS
                   </p>
                   <p className='info'>
                     <span className='code-color asterik'>*</span>
-                    Assisted the lead developer on refactoring the code for the <a href="https://www.juristerra.net/" target="_blank" rel="noopener noreferrer" class="code">Juristerra</a> web platform 
+                    Assisted the lead developer on refactoring the code for the <a href="https://www.juristerra.net/" target="_blank" rel="noopener noreferrer" className="code">Juristerra</a> web platform 
                     </p>
                 </TabPane>
               </TabContent>
@@ -160,7 +160,31 @@ export default function Homepage() {
                   <p className='tech'> JavaScript ReactJS ExpressJS</p>
                 </div>
                   </Col>*/}
-              <Col md='12' lg='4'>
+              <Col md='12' lg='6'>
+              <div className='outline'></div>
+                <div className='box'>
+                  <h6 className='code'>Web Application</h6>
+                  <a href='https://objective-aryabhata-7249cc.netlify.app/' target='_blank' rel="noopener noreferrer"><h5>Ravenous</h5></a>
+                  <p className='info'>
+                    A tool to search for businesses to recieve information on it's address, ratings, and number of reviews. 
+                  </p>
+                  <p className='tech'>JavaScript ReactJS Yelp-API Axios</p>
+                </div>
+              </Col>
+              <Col md='12' lg='6'>
+              <div className='outline'></div>
+                <div className='box'>
+                  <h6 className='code'>Web Application</h6>
+                  <a href='https://objective-liskov-b878bd.netlify.app/' target='_blank' rel="noopener noreferrer"><h5>Shortly</h5></a>
+                  <p className='info'>
+                    A tool to shorten your link, as apart of a mock website designed by FrontEnd Mentor. 
+                  </p>
+                  <p className='tech'>TypeScript ReactJS Redux  RelLink-API  Axios</p>
+                </div>
+              </Col>
+            </Row>
+            <Row>
+            <Col md='12' lg='6'>
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Club Website</h6>
@@ -178,26 +202,16 @@ export default function Homepage() {
                   <p className='tech'>HTML CSS3 Bootstrap</p>
                 </div>
               </Col>
-              <Col md='12' lg='4'>
+              <Col md='12' lg='6'>
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Web Application</h6>
-                  <a href='https://objective-aryabhata-7249cc.netlify.app/' target='_blank' rel="noopener noreferrer"><h5>Ravenous</h5></a>
+                  <a href='https://dazzling-galileo-94f8eb.netlify.app/' target='_blank' rel="noopener noreferrer"
+                  ><h5>Where in the World?</h5></a>
                   <p className='info'>
-                    A tool to search for businesses to recieve information on it's address, ratings, and number of reviews. 
+                    A resource for basic information on any country in the world, as apart of challenge on Frontend Mentor. 
                   </p>
-                  <p className='tech'>JavaScript ReactJS Yelp-API Axios</p>
-                </div>
-              </Col>
-              <Col md='12' lg='4'>
-              <div className='outline'></div>
-                <div className='box'>
-                  <h6 className='code'>Web Application</h6>
-                  <a href='https://objective-liskov-b878bd.netlify.app/' target='_blank' rel="noopener noreferrer"><h5>Shortly</h5></a>
-                  <p className='info'>
-                    A tool to shorten your link, as apart of a mock website designed by FrontEnd Mentors. 
-                  </p>
-                  <p className='tech'>TypeScript ReactJS Redux  RelLink-API  Axios</p>
+                  <p className='tech'>TypeScript ReactJS Countries-API SCSS</p>
                 </div>
               </Col>
             </Row>
