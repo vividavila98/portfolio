@@ -66,7 +66,7 @@ export default function Moneywise() {
                         <p>
                         React Native, JavaScript, ExpressJS, Plaid API 
                         </p>
-                        <a href='https://github.com/vividavila98/MoneyWise' target='_blank'><img src={github} className='github'/></a>
+                        <a href='https://github.com/vividavila98/MoneyWise' target='_blank' rel='noopener noreferrer'><img src={github} className='github' alt='github'/></a>
                     </CardBody>
                 </Card>
             </Collapse>
@@ -191,7 +191,7 @@ export default function Moneywise() {
                         </p>
                           <h4>Working With The Plaid API</h4>
                           <img src={plaid} className='img-fluid screen' alt='income' />
-                          <p>This is the first time I've ever worked with the <a href='https://plaid.com/docs/quickstart/' target='_blank' style={{color: 'white', fontStyle: 'italic'}}>Plaid API</a>, and the documentation for using it with React Native is a bit dated, so I want to quickly run through it.</p>
+                          <p>This is the first time I've ever worked with the <a href='https://plaid.com/docs/quickstart/' target='_blank' rel='noopener noreferrer' style={{color: 'white', fontStyle: 'italic'}}>Plaid API</a>, and the documentation for using it with React Native is a bit dated, so I want to quickly run through it.</p>
                           <p><b>What is the Plaid API</b></p>
                           <p>The Plaid API allows you to connect your bank account to your application. Once it's securely connected, you can get information such as transaction history, balance, income, and more.</p>
                           <p><b>The Flow</b></p>

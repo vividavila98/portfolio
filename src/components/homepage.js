@@ -9,7 +9,6 @@ import skills from '../images/skills.png';
 //import link from '../images/link.png';
 import '../styles/homepage.scss';
 import { NavHashLink } from 'react-router-hash-link';
-import { Link } from 'react-router-dom';
 import line from '../images/line.svg';
 import Footer from './footer';
 
@@ -45,7 +44,7 @@ export default function Homepage() {
             <Row>
             <Col md='12' lg='6'>
                 <h3><span className='code'>01. </span>About Me <img src={line} className='line' alt='line'/></h3>
-                <h5 className='code'>// More about me as a Web Developer</h5>
+                <h5 className='code'>{'//'} More about me as a Web Developer</h5>
                 <img src={skills} className='skills img-fluid' alt='skills'/>
               </Col>
               <Col md='12' lg='6' className='about-col'>
@@ -66,7 +65,7 @@ export default function Homepage() {
         <section id='experience' className='container-fluid'>
           <div className='container experience'>
             <h3 className='text-center'><span className='code'>02. </span>Professional Experience <img src={line} className='line' alt='line'/></h3>
-            <h5 className='code text-center'>// My work involving Web Development, Design, and Education</h5>
+            <h5 className='code text-center'>{'//'} My work involving Web Development, Design, and Education</h5>
             <div className='tabs text-center'>
             <Row>
             <Col xs="12" sm="12" md="4">
@@ -147,7 +146,7 @@ export default function Homepage() {
         <section id='projects' className='container-fluid text-center'>
           <div className='container projects text-center'>
             <h3><span className='code'>03. </span>My Projects <img src={line} className='line' alt='line'/></h3>
-            <h5 className='code'>// UI/UX Development &amp; JavaScript Development</h5>
+            <h5 className='code'>{'//'} UI/UX Development &amp; JavaScript Development</h5>
             <Row>
            { /*<Col md='12' lg='4'>
               <div className='outline'></div>

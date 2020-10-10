@@ -2,11 +2,10 @@ import React, {useState} from 'react';
 import '../styles/navigation.scss';
 import { 
     Collapse, Navbar, NavbarToggler, NavbarBrand, 
-    Nav, NavItem, Button
+    Nav, NavItem
 } from 'reactstrap';
 import { NavHashLink } from 'react-router-hash-link';
 import menu from '../images/menu.svg';
-import resume from '../images/Viviana_Davila_Resume.pdf';
 
 export default function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
