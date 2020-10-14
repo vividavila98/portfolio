@@ -167,7 +167,7 @@ export default function Homepage() {
                   <p className='info'>
                     A tool to search for businesses to recieve information on it's address, ratings, and number of reviews. 
                   </p>
-                  <p className='tech'>JavaScript ReactJS Yelp-API Axios</p>
+                  <p className='tech'>JavaScript &nbsp;&nbsp; ReactJS &nbsp;&nbsp; Yelp API &nbsp;&nbsp; Axios</p>
                 </div>
               </Col>
               <Col md='12' lg='6'>
@@ -178,7 +178,7 @@ export default function Homepage() {
                   <p className='info'>
                     A tool to shorten your link, as apart of a mock website designed by FrontEnd Mentor. 
                   </p>
-                  <p className='tech'>TypeScript ReactJS Redux  RelLink-API  Axios</p>
+                  <p className='tech'>TypeScript &nbsp;&nbsp; ReactJS &nbsp;&nbsp; Redux &nbsp;&nbsp;  RelLink API &nbsp;&nbsp;  Axios</p>
                 </div>
               </Col>
             </Row>
@@ -198,7 +198,7 @@ export default function Homepage() {
                     <img src={github} className='img-fluid git' alt='github' height='30' width='30'/>
                     <img src={link} className='img-fluid' alt='github' height='25' width='25'/>
                  </p>*/}
-                  <p className='tech'>HTML CSS3 Bootstrap</p>
+                  <p className='tech'>HTML &nbsp;&nbsp; CSS3 &nbsp;&nbsp; Bootstrap</p>
                 </div>
               </Col>
               <Col md='12' lg='6'>
@@ -210,7 +210,7 @@ export default function Homepage() {
                   <p className='info'>
                     A resource for basic information on any country in the world, as apart of challenge on Frontend Mentor. 
                   </p>
-                  <p className='tech'>TypeScript ReactJS Countries-API SCSS</p>
+                  <p className='tech'>TypeScript &nbsp;&nbsp; ReactJS &nbsp;&nbsp; Countries API &nbsp;&nbsp; SCSS</p>
                 </div>
               </Col>
             </Row>
