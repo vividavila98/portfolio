@@ -163,6 +163,17 @@ export default function Homepage() {
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Web Application</h6>
+                  <a href='https://www.lill.link/' target='_blank' rel="noopener noreferrer"><h5>Shortly</h5></a>
+                  <p className='info'>
+                    A tool to shorten your link, as apart of a mock website designed by FrontEnd Mentor. 
+                  </p>
+                  <p className='tech'>TypeScript &nbsp;&nbsp; NodeJS &nbsp;&nbsp; ExpressJS &nbsp;&nbsp; MongoDB &nbsp;&nbsp; ReactJS &nbsp;&nbsp; Redux &nbsp;&nbsp; Axios</p>
+                </div>
+              </Col>
+              <Col md='12' lg='6'>
+              <div className='outline'></div>
+                <div className='box'>
+                  <h6 className='code'>Web Application</h6>
                   <a href='https://objective-aryabhata-7249cc.netlify.app/' target='_blank' rel="noopener noreferrer"><h5>Ravenous</h5></a>
                   <p className='info'>
                     A tool to search for businesses to recieve information on it's address, ratings, and number of reviews. 
@@ -170,23 +181,12 @@ export default function Homepage() {
                   <p className='tech'>JavaScript &nbsp;&nbsp; ReactJS &nbsp;&nbsp; Yelp API &nbsp;&nbsp; Axios</p>
                 </div>
               </Col>
-              <Col md='12' lg='6'>
-              <div className='outline'></div>
-                <div className='box'>
-                  <h6 className='code'>Web Application</h6>
-                  <a href='https://objective-liskov-b878bd.netlify.app/' target='_blank' rel="noopener noreferrer"><h5>Shortly</h5></a>
-                  <p className='info'>
-                    A tool to shorten your link, as apart of a mock website designed by FrontEnd Mentor. 
-                  </p>
-                  <p className='tech'>TypeScript &nbsp;&nbsp; ReactJS &nbsp;&nbsp; Redux &nbsp;&nbsp;  RelLink API &nbsp;&nbsp;  Axios</p>
-                </div>
-              </Col>
             </Row>
             <Row>
             <Col md='12' lg='6'>
               <div className='outline'></div>
                 <div className='box'>
-                  <h6 className='code'>Club Website</h6>
+                  <h6 className='code'>Website</h6>
                   <a href='https://cssa-ucsd.org/2019-2020/index.html' target='_blank' rel="noopener noreferrer"
                   ><h5>CSSA</h5></a>
                   <p className='info'>

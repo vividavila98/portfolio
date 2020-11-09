@@ -53,3 +53,9 @@ button.contact-btn {
 .navigation {
     background-color: $dark;
 }
+
+li.nav-item {
+    @media (max-width:768px) {
+        margin-bottom: 15px;
+    }
+}
