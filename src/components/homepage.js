@@ -174,7 +174,7 @@ export default function Homepage() {
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Web Application</h6>
-                  <a href='https://objective-aryabhata-7249cc.netlify.app/' target='_blank' rel="noopener noreferrer"><h5>Ravenous</h5></a>
+                  <a href='https://www.ravenous.me/' target='_blank' rel="noopener noreferrer"><h5>Ravenous</h5></a>
                   <p className='info'>
                     A tool to search for businesses to recieve information on it's address, ratings, and number of reviews. 
                   </p>
