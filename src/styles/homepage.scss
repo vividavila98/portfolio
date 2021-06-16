@@ -89,7 +89,17 @@ $box: #1D3152;
 
 /**** Experience *****/
 .experience {
+    height: 475px;
     margin-top: 15%;
+    @media (max-width: 1199px) {
+        height: 514px;
+    }
+    @media (max-width: 991px) {
+        height: 627px;
+    }
+    @media (max-width: 767px) {
+        height: auto;
+    }
     .tabs {
         margin-top: 5%;
         a.nav-link {
@@ -123,6 +133,9 @@ $box: #1D3152;
             }
             .asterik {
                 margin-right: 10px;
+            }
+            a.code-color:hover {
+                color: $code;
             }
         }
         .nav {

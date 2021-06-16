@@ -109,7 +109,13 @@ export default function Homepage() {
                   <p className = 'date'> August 2020 - Present </p>
                   <p className='info'>
                     <span className='code-color asterik'>*</span>
-                    Assist lead developer in building websites for a variety of doctors' practices.
+                    Work closely with the Design team to implement Photoshop mockups into modern and high-quality websites using WordPress, HTML, and CSS to represent our clients' businesses.
+                  </p>
+                  <p className='info'>
+                    <span className='code-color asterik'>*</span>
+                    Examples of my work include creating websites for various doctors such as a <a href="https://www.drnaarpremiervein.com/" target="_blank" rel="noopener noreferrer" className='code'>Vascular Surgeon</a>, 
+                    a <a href="https://shinecosmeticsurgery.com/" target="_blank" rel="noopener noreferrer" className='code'>Cosmetic Surgeon</a>, 
+                    and a team of <a href="https://www.austincosmeticsurgery.com/" target="blank" rel="noopener noreferrer" className='code'>Cosmetic Surgeons</a>. 
                   </p>
                 </TabPane>
                 <TabPane tabId="2">
@@ -117,11 +123,15 @@ export default function Homepage() {
                   <p className = 'date'>February 2020 - October 2020</p>
                   <p className='info'>
                     <span className='code-color asterik'>*</span>
-                    Developed the Front-End side of <a href="https://wistly.io/" target="_blank" rel="noopener noreferrer" className="code">Wisty</a>: a React Native application in collaboration with another intern
+                    Collaborated in a cross-functional team of passionate designers and developers to begin the development 
+                    of a <a href="https://wistly.io/" target="_blank" rel="noopener noreferrer" className="code">delivery service mobile application</a> using React Native, 
+                    TypeScript, and Redux. 
                   </p>
                   <p className='info'>
                     <span className='code-color asterik'>*</span>
-                      Integrated Google Maps using an npm package in order to show the user's current location
+                    Utilized the Google Places API with Redux to enable users to view their current location when making a delivery 
+                    request; acknowledged during my code review for my use of Redux making the location state traceable and
+                    maintainable in the codebase.
                     </p>
                 </TabPane>
                 <TabPane tabId="3">
@@ -183,22 +193,30 @@ export default function Homepage() {
               </Col>
             </Row>
             <Row>
-            <Col md='12' lg='6'>
+          {/* <Col md='12' lg='6'>
+            <div className='outline'></div>
+              <div className='box'>
+                <h6 className='code'>Website</h6>
+                <a href='https://cssa-ucsd.org/2019-2020/index.html' target='_blank' rel="noopener noreferrer"
+                ><h5>CSSA</h5></a>
+                <p className='info'>
+                  A resource on how 
+                  students can get involved in the Cognitive 
+                  Science community. 
+                </p>
+                <p className='tech'>HTML &nbsp;&nbsp; CSS3 &nbsp;&nbsp; Bootstrap</p>
+              </div>
+            </Col> */}
+              <Col md='12' lg='6'>
               <div className='outline'></div>
                 <div className='box'>
-                  <h6 className='code'>Website</h6>
-                  <a href='https://cssa-ucsd.org/2019-2020/index.html' target='_blank' rel="noopener noreferrer"
-                  ><h5>CSSA</h5></a>
+                  <h6 className='code'>Web Application</h6>
+                  <a href='https://fervent-villani-5078b3.netlify.app/' target='_blank' rel="noopener noreferrer"
+                  ><h5>IP Tracker</h5></a>
                   <p className='info'>
-                    A resource on how 
-                    students can get involved in the Cognitive 
-                    Science community. 
+                    A tool to find location details based on either your current or inputted IP address.
                   </p>
-                 { /*<p>
-                    <img src={github} className='img-fluid git' alt='github' height='30' width='30'/>
-                    <img src={link} className='img-fluid' alt='github' height='25' width='25'/>
-                 </p>*/}
-                  <p className='tech'>HTML &nbsp;&nbsp; CSS3 &nbsp;&nbsp; Bootstrap</p>
+                  <p className='tech'>TypeScript &nbsp;&nbsp; ReactJS &nbsp;&nbsp; IP Geolocation API &nbsp;&nbsp; LeafletJS</p>
                 </div>
               </Col>
               <Col md='12' lg='6'>
