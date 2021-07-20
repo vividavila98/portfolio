@@ -100,13 +100,23 @@ export default function Homepage() {
                     Juristerra Internship
                   </NavLink>
                 </NavItem>
+                <NavItem>
+                  <NavLink
+                    className={classnames({active: activeTab === '4'})}
+                    onClick={() => {
+                      toggle('4');
+                    }}
+                  >
+                    CSSA Board Member
+                  </NavLink>
+                </NavItem>
               </Nav>
             </Col>
             <Col xs="12" sm="12" md="6">
               <TabContent className='text-left' activeTab={activeTab}>
               <TabPane tabId="1">
                   <h5>Front-End Developer<span className='code-color'> @ GrowthMed</span></h5>
-                  <p className = 'date'> August 2020 - Present </p>
+                  <p className = 'date'> August 2020 - June 2021 </p>
                   <p className='info'>
                     <span className='code-color asterik'>*</span>
                     Work closely with the Design team to implement Photoshop mockups into modern and high-quality websites using WordPress, HTML, and CSS to represent our clients' businesses.
@@ -145,6 +155,15 @@ export default function Homepage() {
                     <span className='code-color asterik'>*</span>
                     Assisted the lead developer on refactoring the code for the <a href="https://www.juristerra.net/" target="_blank" rel="noopener noreferrer" className="code">Juristerra</a> web platform 
                     </p>
+                </TabPane>
+                <TabPane tabId="4">
+                  <h5>Web Designer &amp; Developer <span className='code-color'>@ CSSA</span></h5>
+                  <p className = 'date'>May 2019 - June 2020</p>
+                  <p className='info'>
+                    <span className='code-color asterik'>*</span>
+                    Redesigned and developed the existing <a href="https://cssa-ucsd.org/2019-2020/index.html" target="_blank" rel="noopener noreferrer" className="code">CSSA</a> website as a friendly and professional mobile-first responsive website in 
+                    order to better serve our Cognitive Science community of hundreds of students and faculty members.
+                  </p>
                 </TabPane>
               </TabContent>
             </Col>

@@ -3,7 +3,7 @@ import {
     Row, Col 
   } from 'reactstrap';
 import '../styles/footer.scss';
-import resume from '../images/Viviana_Davila_Resume.pdf';
+import resume from '../images/Viviana-Davila.pdf';
 import line from '../images/line.svg';
 
 export default function Footer() {
