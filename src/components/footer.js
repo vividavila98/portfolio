@@ -22,7 +22,7 @@ export default function Footer() {
               <Col sm='12' md='4'>
                 <div  className='box'>
                 <h6 className='mb-0'><a href={resume} target='_blank' rel="noopener noreferrer">Resume <span className='code'>&#8594;</span></a></h6>
-                <p className='small'>learn about my work experience</p>
+                <p className='small'>review my work experience</p>
                 </div>
               </Col>
               <Col sm='12' md='4'>

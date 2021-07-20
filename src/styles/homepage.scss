@@ -78,10 +78,12 @@ $box: #1D3152;
 .about-text {
     margin-left: 15%;
     padding-top: 20%;
+    @media (max-width: 991px) {
+        margin-left: 0%;
+    }
     @media (max-width: 767.98px) {
         padding-top: 0;
         max-width: 100%;
-        margin-left: 0%;
         margin-top: 10%;
         text-align: center;
     }
@@ -158,6 +160,9 @@ $box: #1D3152;
         height: 80%;
         top: 25%;
     }*/
+    .row {
+        // justify-content: center;
+    }
     .box {
         .git {
             margin-right: 15px;

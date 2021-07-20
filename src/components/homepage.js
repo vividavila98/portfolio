@@ -188,7 +188,7 @@ export default function Homepage() {
                   <p className='tech'> JavaScript ReactJS ExpressJS</p>
                 </div>
                   </Col>*/}
-              <Col md='12' lg='6'>
+              <Col md='12' lg='4'>
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Web Application</h6>
@@ -199,7 +199,7 @@ export default function Homepage() {
                   <p className='tech'>TypeScript &nbsp;&nbsp; NodeJS &nbsp;&nbsp; ExpressJS &nbsp;&nbsp; MongoDB &nbsp;&nbsp; ReactJS &nbsp;&nbsp; Redux &nbsp;&nbsp; Axios</p>
                 </div>
               </Col>
-              <Col md='12' lg='6'>
+              <Col md='12' lg='4'>
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Web Application</h6>
@@ -208,6 +208,17 @@ export default function Homepage() {
                     A tool to search for businesses to recieve information on it's address, ratings, and number of reviews. 
                   </p>
                   <p className='tech'>JavaScript &nbsp;&nbsp; ReactJS &nbsp;&nbsp; Yelp API &nbsp;&nbsp; Axios</p>
+                </div>
+              </Col>
+              <Col md='12' lg='4'>
+              <div className='outline'></div>
+                <div className='box'>
+                  <h6 className='code'>Website</h6>
+                  <a href='https://www.vivianadavila.codes/' target='_blank' rel="noopener noreferrer"><h5>My Technical Blog</h5></a>
+                  <p className='info'>
+                    A static blog where I'll post tips, tutorials, and overviews of web development content. 
+                  </p>
+                  <p className='tech'>JavaScript &nbsp;&nbsp; NextJS &nbsp;&nbsp; Markdown &nbsp;&nbsp; MailChimp API</p>
                 </div>
               </Col>
             </Row>
@@ -226,7 +237,7 @@ export default function Homepage() {
                 <p className='tech'>HTML &nbsp;&nbsp; CSS3 &nbsp;&nbsp; Bootstrap</p>
               </div>
             </Col> */}
-              <Col md='12' lg='6'>
+              <Col md='12' lg='4'>
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Web Application</h6>
@@ -238,7 +249,7 @@ export default function Homepage() {
                   <p className='tech'>TypeScript &nbsp;&nbsp; ReactJS &nbsp;&nbsp; IP Geolocation API &nbsp;&nbsp; LeafletJS</p>
                 </div>
               </Col>
-              <Col md='12' lg='6'>
+              <Col md='12' lg='4'>
               <div className='outline'></div>
                 <div className='box'>
                   <h6 className='code'>Web Application</h6>
